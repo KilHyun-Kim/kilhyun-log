@@ -1,0 +1,44 @@
+.__projectListSlider {
+  height: 300px;
+  border: 20px solid #000;
+  text-align: center;
+  margin: 0 auto;
+}
+.imagesize {
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+#circle {
+  margin: 40px 0 30px 0;
+  border-radius: 50%;
+}
+/* slick control */
+.slick-slider {
+  width: 100%;
+}
+.slick-dots {
+  bottom: 0;
+}
+.otherImage {
+  width: 140px;
+  height: 140px;
+  margin: 50px 0;
+}
+
+.__Slider a:hover {
+  color: black;
+}
+.__Slider a {
+  white-space: 3px;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}
+.__Slider a:visited {
+  color: #000;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}

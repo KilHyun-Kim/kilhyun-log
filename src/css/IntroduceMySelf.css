@@ -1,0 +1,59 @@
+.myselfContainer {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #ccc;
+}
+
+.myPicture {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: white;
+  margin: 0 auto;
+}
+.myPicture img {
+  width: 80%;
+  height: 80%;
+  padding: 8px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.__intro {
+  padding: 10px;
+}
+
+.__intro p {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.__pbold {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.goal {
+  font-size: 10px;
+}
+.goal p {
+  margin: 8px 0;
+}
+
+.Expression {
+  margin-top: 50px;
+}
+
+.__SNSIcon ul {
+}
+.__SNSIcon ul li {
+  width: 30px;
+  height: auto;
+  display: inline-block;
+  margin: 0 10px;
+}
+.__SNSIcon ul li a,
+.__SNSIcon ul li a:hover,
+.__SNSIcon ul li a:active,
+.__SNSIcon ul li a:visited {
+  color: #fff;
+}

@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+.headerWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-image: url(../image/universe.jpg);
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.scrolled {
+  position: fixed;
+}
+.nav-links {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link_logo {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 80px;
+  text-align: center;
+}
+
+/*  nav 바  */
+
+nav {
+  position: relative;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+.nav-links a:hover {
+  color: #bbb;
+}

@@ -1,0 +1,25 @@
+.projectContainer {
+  width: 80%;
+  margin: 0 auto 300px;
+  text-align: center;
+}
+.__title {
+  margin: 100px 0 30px;
+}
+
+.__title h1 {
+  margin: 0;
+  display: inline-block;
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 20px/20px;
+  font-weight: bold;
+}
+.__listContainer {
+  margin: 0 auto;
+  width: 80%;
+  border: 20px solid #000;
+  border-radius: 8px;
+}
