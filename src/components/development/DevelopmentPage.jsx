@@ -14,7 +14,7 @@ const DevelopmentPage = () => {
       alt: "JavaScript"
     },
     {
-      hyperLink: "/development/Typescript",
+      hyperLink: "/development/typescript",
       projectName: "TypeScript",
       explanation: "TypeScript is...",
       addEx: "Kilikili",

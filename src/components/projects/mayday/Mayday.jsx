@@ -6,12 +6,12 @@ import ProjectTopic, {
   ProjectVideo,
   ProjectTwoImage,
   PriceImage
-} from "./ProjectTopic";
-import maydayimage from "../../image/smilemaydayicon.png";
-import capstone1 from "../../image/mayday/capstone1.jpg";
-import capstone2 from "../../image/mayday/capstone2.png";
-import price1 from "../../image/mayday/price1.jpg";
-import price2 from "../../image/mayday/price2.png";
+} from "../ProjectTopic";
+import maydayimage from "../../../image/smilemaydayicon.png";
+import capstone1 from "../../../image/mayday/capstone1.jpg";
+import capstone2 from "../../../image/mayday/capstone2.png";
+import price1 from "../../../image/mayday/price1.jpg";
+import price2 from "../../../image/mayday/price2.png";
 
 const Mayday = () => {
   return (

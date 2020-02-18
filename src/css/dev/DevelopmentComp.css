@@ -1,0 +1,87 @@
+.DevContainer {
+  width: 70%;
+  margin: 100px auto;
+}
+
+.DevHead {
+  text-align: center;
+}
+
+.DevHead h1 {
+  display: inline-block;
+  font-size: 3em;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #ddd;
+  margin: 0;
+}
+.DevHead h2 {
+  padding-top: 5px;
+  margin: 0;
+}
+
+.DevContent {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.DevContent h2 {
+  border-left: 5px #dd4c39 solid;
+  padding-left: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.DevContent h3 {
+  margin-bottom: 2%;
+}
+
+.DevContent p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Code */
+
+pre {
+  width: 80%;
+  padding: 0px !important;
+  margin: 20px 0;
+}
+
+pre code {
+  display: block;
+  color: #abb2bf;
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+._codeBlue {
+  color: #1e6379;
+}
+._codeName {
+  color: #fde3b3;
+}
+._codeWhite {
+  color: white;
+}
+._codeVerse {
+  color: #94fffa;
+}
+._codePurple {
+  color: #dd73dd;
+}
+._codeGreen {
+  color: #009933;
+}
+._codeBGreen {
+  color: #95f7b6;
+}
+._codeOrange {
+  color: #fcb54c;
+}
+._codeRed {
+  color: #dd4c39;
+}
