@@ -11,6 +11,10 @@ import JavascriptPageList from "./components/development/javascript/JavascriptPa
 import js1 from "./components/development/javascript/Js1";
 import TypescriptPageList from "./components/development/typescript/TypescriptPageList";
 import ReactPageList from "./components/development/react/ReactPageList";
+import Ts1 from "./components/development/typescript/Ts1";
+import TravelPage from "./components/travel/TravelPage";
+import KokiPage from "./components/travel/KokiPage";
+import TravelPageList from "./components/travel/TravelPageList";
 export default () => (
   <Router>
     <Header title="KILHYUN.LOG" />
@@ -31,6 +35,10 @@ export default () => (
       path="/development/typescript"
       component={TypescriptPageList}
     />
+    <Route exact path="/development/typescript/1" component={Ts1} />
     <Route exact path="/development/react" component={ReactPageList} />
+
+    <Route exact path="/travel" component={TravelPageList} />
+    <Route exact path="/travel/koki" component={KokiPage} />
   </Router>
 );

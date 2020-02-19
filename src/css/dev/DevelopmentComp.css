@@ -1,5 +1,5 @@
 .DevContainer {
-  width: 70%;
+  width: 60%;
   margin: 100px auto;
 }
 
@@ -45,7 +45,7 @@
 /* Code */
 
 pre {
-  width: 80%;
+  width: 100%;
   padding: 0px !important;
   margin: 20px 0;
 }
@@ -84,4 +84,26 @@ pre code {
 }
 ._codeRed {
   color: #dd4c39;
+}
+
+/* scroll bar */
+.ScrollDiv {
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+  position: fixed;
+  top: 150px;
+  left: 1300px;
+}
+
+.ScrollDiv p {
+  font-size: 0.8em;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.ScrollDiv p:hover {
+  text-decoration: underline;
+  color: #aaa;
 }

@@ -153,6 +153,32 @@ export const JSCode = props => {
   );
 };
 
+export const DevelopmentScroll = props => {
+  // window.scrollTo({ top: props.y, left: 0, behavior: "smooth" });
+
+  return (
+    <div className="ScrollDiv">
+      <p
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
+        {props.scroll1}
+      </p>
+      <p
+        onClick={() => {
+          window.scrollTo({ top: 500, left: 0, behavior: "smooth" });
+        }}
+      >
+        {props.scroll2}
+      </p>
+      <p>{props.scroll3}</p>
+      <p>{props.scroll4}</p>
+      <p>{props.scroll5}</p>
+    </div>
+  );
+};
+
 const DevelopmentComp = props => {
   return;
 };

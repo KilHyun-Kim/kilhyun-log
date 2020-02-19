@@ -3,26 +3,35 @@ import "../../../css/dev/DevelopmentComp.css";
 import DevelopmentComp, {
   DevelopmentHead,
   DevelopmentContent,
-  JSCode
+  JSCode,
+  DevelopmentScroll
 } from "../../development/components/DevelopmentComp";
 const Js1 = () => {
   return (
     <div className="DevContainer">
+      <DevelopmentScroll
+        scroll1="1.1 컴퓨터 프로그래밍에서의 함수란?"
+        y="0"
+        scroll2="2. 함수 정의"
+        scroll3="2.1 함수 선언문 사용"
+        scroll4="2.2 함수 표현식"
+        scroll5="2.3 Function() 생성자 함수를 통한 함수 생성"
+      />
       <DevelopmentHead title="Function" subtitle="JavaScript의 함수(1)" />
       <DevelopmentContent
-        topic1="컴퓨터 프로그래밍에서의 함수란?"
+        topic1="1. 컴퓨터 프로그래밍에서의 함수란?"
         _explanation1="함수 (function)란 하나의 특별한 목적의 작업을 수행하기 위해 독립적으로 설계된 코드의 집합으로 정의할 수 있습니다."
       />
       <DevelopmentContent
-        topic1="JavaScript에서의 함수란?"
+        topic1="1.1 JavaScript에서의 함수란?"
         _explanation1="함수는 JavaScript에서 기본적인 구성 블록 중의 하나입니다. 함수는 작업을 수행하거나 값을 계산하는 문장 집합 같은 자바스크립트 절차입니다. "
       />
       <DevelopmentContent
-        topic1="함수 정의"
+        topic1="2. 함수 정의"
         _explanation1="JavaScript에서 함수 선언 시 3가지 방법이 있습니다."
       />
       <DevelopmentContent
-        subtopic1="1) 함수 선언문 사용"
+        subtopic1="2.1 함수 선언문 사용"
         _explanation1="function 키워드와 함수명이 정의된 방식"
       />
       <JSCode
@@ -78,7 +87,7 @@ const Js1 = () => {
         text311="  //  7"
       />
       <DevelopmentContent
-        subtopic1="2) 함수 표현식"
+        subtopic1="2.2 함수 표현식"
         _explanation1="함수 리터럴로 익명 함수를 만들고 변수에 할당하는 방식"
         _explanation2="(유연한 자바스크립트 언어의 특징을 활용한 선언 방식)"
         _explanation3="※ 함수 선언문 방식과의 차이점은 변수 add가 함수 이름이 아니며, 함수의 참조값을 가진다는 것입니다."
@@ -141,7 +150,7 @@ const Js1 = () => {
       />
 
       <DevelopmentContent
-        subtopic1="3) Function() 생성자 함수를 통한 함수 생성"
+        subtopic1="2.3 Function() 생성자 함수를 통한 함수 생성"
         _explanation1="JavaScript의 함수는 Function()이라는 내장 생성자 함수로부터 생성된 객체입니다."
         _explanation2="즉, 앞에서 살펴본 함수 선언문, 함수 표현식 모두 내부적으로 Function() 생성자 함수로부터 함수가 생성된다는 것입니다."
         _explanation3="그럼에도 함수 선언문, 표현식을 사용하는 이유는 함수 작성이 편리하기 때문입니다."

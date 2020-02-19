@@ -85,6 +85,7 @@ export default class MainSlider extends Component {
                     alt={this.props.alt5}
                   />
                 </a>
+                <a href="/">{this.props.topic5}</a>
               </li>
             </Slider>
           </ul>
