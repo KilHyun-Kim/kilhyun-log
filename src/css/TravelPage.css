@@ -89,6 +89,7 @@
   display: flex;
   text-align: center;
   align-items: center;
+  flex-direction: column;
 }
 /* TravelImages */
 .TravelImages {
@@ -96,8 +97,22 @@
   width: 100%;
   height: auto;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 .TravelImages img {
   width: 20%;
+}
+
+.__Images {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.__Images p {
+  font-size: 0.8em;
+}
+.__Images img {
+  border: 1px solid #ddd;
+  width: 100%;
   height: auto;
 }

@@ -33,11 +33,22 @@ export const TravelImage = props => {
   console.log(props.src);
   return (
     <div className="TravelImages">
-      <img src={props.src1} alt={props.alt1} />
-      <img src={props.src2} alt={props.alt2} />
-      <img src={props.src3} alt={props.alt3} />
-      <img src={props.src4} alt={props.alt4} />
-      <p>{props.text}</p>
+      <div className="__Images">
+        <img src={props.src1} alt={props.alt1} />
+        <p>{props.text1}</p>
+      </div>
+      <div className="__Images">
+        <img src={props.src2} alt={props.alt2} />
+        <p>{props.text2}</p>
+      </div>
+      <div className="__Images">
+        <img src={props.src3} alt={props.alt3} />
+        <p>{props.text3}</p>
+      </div>
+      <div className="__Images">
+        <img src={props.src4} alt={props.alt4} />
+        <p>{props.text4}</p>
+      </div>
     </div>
   );
 };

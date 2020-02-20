@@ -6,11 +6,11 @@
   border-bottom: 1px solid #efefef;
   margin: 50px 30px;
   box-shadow: rgb(204, 204, 204) 0px 10px 20px;
-  text-transform: uppercase;
 }
 
 .link_post {
   color: #000;
+  text-decoration: none;
 }
 
 .link_post:visited {

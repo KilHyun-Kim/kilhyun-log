@@ -15,6 +15,9 @@ import Ts1 from "./components/development/typescript/Ts1";
 import TravelPage from "./components/travel/TravelPage";
 import KokiPage from "./components/travel/KokiPage";
 import TravelPageList from "./components/travel/TravelPageList";
+import SassList from "./components/development/sass/SassList";
+import Sass1 from "./components/development/sass/Sass1";
+import Sass2 from "./components/development/sass/Sass2";
 export default () => (
   <Router>
     <Header title="KILHYUN.LOG" />
@@ -37,6 +40,9 @@ export default () => (
     />
     <Route exact path="/development/typescript/1" component={Ts1} />
     <Route exact path="/development/react" component={ReactPageList} />
+    <Route exact path="/development/sass" component={SassList} />
+    <Route exact path="/development/sass/1" component={Sass1} />
+    <Route exact path="/development/sass/2" component={Sass2} />
 
     <Route exact path="/travel" component={TravelPageList} />
     <Route exact path="/travel/koki" component={KokiPage} />

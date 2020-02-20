@@ -17,6 +17,9 @@ export const DevelopmentContent = props => {
       <p>{props._explanation2}</p>
       <p>{props._explanation3}</p>
       <p>{props._explanation4}</p>
+      <h3>{props.subtopic2}</h3>
+      <p>{props._explanation5}</p>
+      <p>{props._explanation6}</p>
     </div>
   );
 };
@@ -50,8 +53,6 @@ export const JSCode = props => {
           <span className={props.color17}>{props.text17}</span>
           <span className={props.color18}>{props.text18}</span>
           <span className={props.color19}>{props.text19}</span>
-          <span className={props.color110}>{props.text110}</span>
-          <span className={props.color111}>{props.text111}</span>
         </p>
         <p>
           <span className={props.color20}>{props.text20}</span>
@@ -147,6 +148,16 @@ export const JSCode = props => {
           <span className={props.color115}>{props.text115}</span>
           <span className={props.color116}>{props.text116}</span>
           <span className={props.color117}>{props.text117}</span>
+        </p>
+        <p>
+          <span className={props.color120}>{props.text120}</span>
+          <span className={props.color121}>{props.text121}</span>
+          <span className={props.color122}>{props.text122}</span>
+          <span className={props.color123}>{props.text123}</span>
+          <span className={props.color124}>{props.text124}</span>
+          <span className={props.color125}>{props.text125}</span>
+          <span className={props.color126}>{props.text126}</span>
+          <span className={props.color127}>{props.text127}</span>
         </p>
       </code>
     </pre>
