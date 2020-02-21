@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/TravelPage.css";
+import ExifOrientationImg from "react-exif-orientation-img";
 
 export const TravelFolder = props => {
   return (
@@ -34,19 +35,19 @@ export const TravelImage = props => {
   return (
     <div className="TravelImages">
       <div className="__Images">
-        <img src={props.src1} alt={props.alt1} />
+        <ExifOrientationImg src={props.src1} alt={props.alt1} />
         <p>{props.text1}</p>
       </div>
       <div className="__Images">
-        <img src={props.src2} alt={props.alt2} />
+        <ExifOrientationImg src={props.src2} alt={props.alt2} />
         <p>{props.text2}</p>
       </div>
       <div className="__Images">
-        <img src={props.src3} alt={props.alt3} />
+        <ExifOrientationImg src={props.src3} alt={props.alt3} />
         <p>{props.text3}</p>
       </div>
       <div className="__Images">
-        <img src={props.src4} alt={props.alt4} />
+        <ExifOrientationImg src={props.src4} alt={props.alt4} />
         <p>{props.text4}</p>
       </div>
     </div>

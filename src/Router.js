@@ -18,6 +18,7 @@ import TravelPageList from "./components/travel/TravelPageList";
 import SassList from "./components/development/sass/SassList";
 import Sass1 from "./components/development/sass/Sass1";
 import Sass2 from "./components/development/sass/Sass2";
+import React1 from "./components/development/react/React1";
 export default () => (
   <Router>
     <Header title="KILHYUN.LOG" />
@@ -40,6 +41,7 @@ export default () => (
     />
     <Route exact path="/development/typescript/1" component={Ts1} />
     <Route exact path="/development/react" component={ReactPageList} />
+    <Route exact path="/development/react/1" component={React1} />
     <Route exact path="/development/sass" component={SassList} />
     <Route exact path="/development/sass/1" component={Sass1} />
     <Route exact path="/development/sass/2" component={Sass2} />

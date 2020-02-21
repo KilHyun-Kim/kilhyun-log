@@ -8,6 +8,25 @@ class Header extends Component {
   state = {
     scrolled: false
   };
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick = () => {
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+    const menu_list = document.querySelector(".menu_list");
+    nav.classList.toggle("nav-active");
+    menu_list.classList.toggle("toggle");
+    navLinks.forEach((link, index) => {
+      if (link.getElementsByClassName.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
+          0.4}s`;
+      }
+    });
+  };
 
   componentDidMount() {
     window.addEventListener("scroll", () => {
@@ -29,6 +48,11 @@ class Header extends Component {
         >
           <Logo logo="KILHYUN.LOG" />
           <HeaderNav />
+          <div className="menu_list" onClick={this.handleClick}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
         </div>
       </header>
     );

@@ -22,7 +22,7 @@ const MainSliderList = () => {
       _link3: "/project/election",
       alt3: "other",
       _src4: OtherprojectImage,
-      _link4: "/project/mayday",
+      _link4: "/project",
       id: "#circle"
     },
     {
@@ -61,9 +61,8 @@ const MainSliderList = () => {
       _src3: "https://static.thenounproject.com/png/4499-200.png",
       _link3: "/travel/osaka",
 
-      _link4: "/travel/osaka",
-      _src4: OtherprojectImage,
-      _link5: "/travel"
+      _link4: "/travel",
+      _src4: OtherprojectImage
     }
   ];
 
