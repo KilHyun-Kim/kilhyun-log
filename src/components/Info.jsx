@@ -3,21 +3,21 @@ import { GoMarkGithub } from "react-icons/go";
 import { FaInstagram } from "react-icons/fa";
 import "../css/IntroduceMySelf.css";
 import Kilhyun from "../image/image001.png";
-const IntroduceMySelf = props => {
+const Info = () => {
   return (
     <div className="myselfContainer">
       <div className="__intro">
         <p>development & life log</p>
       </div>
       <div className="myPicture">
-        <img src={Kilhyun} alt={props.alt} />
+        <img src={Kilhyun} alt="하이" />
       </div>
       <div className="slider-wrapper">
         <p>I wanna be a</p>
         <div className="slider">
-          <div className="slidertext1">{props.slider1}</div>
-          <div className="slidertext2">{props.slider2}</div>
-          <div className="slidertext3">{props.slider3}</div>
+          <div className="slidertext1">"Developer"</div>
+          <div className="slidertext2">"Traveler"</div>
+          <div className="slidertext3">"Full-Stack"</div>
         </div>
       </div>
       <div className="goal">
@@ -107,8 +107,8 @@ const IntroduceMySelf = props => {
         </div>
       </div>
       {/* <div>
-        <p>앞으로의 포부</p>
-      </div> */}
+    <p>앞으로의 포부</p>
+  </div> */}
       <div className="__SNSIcon">
         <ul>
           <li>
@@ -130,4 +130,4 @@ const IntroduceMySelf = props => {
   );
 };
 
-export default IntroduceMySelf;
+export default Info;

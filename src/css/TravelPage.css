@@ -1,8 +1,11 @@
+.TravelWrapper {
+  padding-top: 100px;
+}
 .TravelContainer {
   width: 70%;
   height: auto;
   border: 5px solid #000;
-  margin: 130px auto;
+  margin: 0 auto;
 }
 .FirstRow {
   border-bottom: 3px solid #000;
@@ -115,4 +118,13 @@
   border: 1px solid #ddd;
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .FirstRow p {
+    font-size: 0.8em;
+  }
+  .__Images p {
+    font-size: 0.1em;
+  }
 }

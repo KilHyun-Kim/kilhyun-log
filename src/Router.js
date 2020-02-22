@@ -12,17 +12,18 @@ import js1 from "./components/development/javascript/Js1";
 import TypescriptPageList from "./components/development/typescript/TypescriptPageList";
 import ReactPageList from "./components/development/react/ReactPageList";
 import Ts1 from "./components/development/typescript/Ts1";
-import TravelPage from "./components/travel/TravelPage";
 import KokiPage from "./components/travel/KokiPage";
 import TravelPageList from "./components/travel/TravelPageList";
 import SassList from "./components/development/sass/SassList";
 import Sass1 from "./components/development/sass/Sass1";
 import Sass2 from "./components/development/sass/Sass2";
 import React1 from "./components/development/react/React1";
+import Info from "./components/Info";
 export default () => (
   <Router>
     <Header title="KILHYUN.LOG" />
     <Route exact path="/" component={Main} />
+    <Route exact path="/info" component={Info} />
     <Route exact path="/project" component={Project} />
     <Route exact path="/project/mayday" component={Mayday} />
     <Route exact path="/project/workroom8363" component={Workroom8363} />

@@ -116,25 +116,27 @@ const KokiPage = () => {
     }
   ];
   return (
-    <div className="TravelContainer">
-      <TravelFolder Folder="Kota Kinabalu" />
-      <div className="TravelImageLists">
-        {imageValues.map((imagevalue, index) => {
-          return (
-            <TravelImage
-              src1={imagevalue.src1}
-              text1={imagevalue.text1}
-              src2={imagevalue.src2}
-              text2={imagevalue.text2}
-              src3={imagevalue.src3}
-              text3={imagevalue.text3}
-              src4={imagevalue.src4}
-              text4={imagevalue.text4}
-              alt="koki1"
-              key={index}
-            />
-          );
-        })}
+    <div className="TravelWrapper">
+      <div className="TravelContainer">
+        <TravelFolder Folder="Kota Kinabalu" />
+        <div className="TravelImageLists">
+          {imageValues.map((imagevalue, index) => {
+            return (
+              <TravelImage
+                src1={imagevalue.src1}
+                text1={imagevalue.text1}
+                src2={imagevalue.src2}
+                text2={imagevalue.text2}
+                src3={imagevalue.src3}
+                text3={imagevalue.text3}
+                src4={imagevalue.src4}
+                text4={imagevalue.text4}
+                alt="koki1"
+                key={index}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

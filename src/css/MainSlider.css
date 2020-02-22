@@ -1,10 +1,3 @@
-.__projectListSlider {
-  height: 300px;
-  border: 20px solid #000;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .imagesize {
   margin: 0 auto;
   width: 180px;
@@ -42,4 +35,26 @@
   letter-spacing: 1px;
   font-weight: bolder;
   font-family: "Montserrat", sans-serif;
+}
+
+/*  */
+
+@media screen and (max-width: 768px) {
+  .__projectListSlider {
+    height: 100px;
+  }
+  .__Slider a,
+  .__Slider a:visited {
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .imagesize {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
 }

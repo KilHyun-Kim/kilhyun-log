@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../css/dev/DevelopmentComp.css";
-import DevelopmentComp, {
+import {
   DevelopmentHead,
   DevelopmentContent,
   JSCode,

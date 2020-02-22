@@ -1,10 +1,9 @@
 import React from "react";
 import "../../../css/dev/DevelopmentComp.css";
-import DevelopmentComp, {
+import {
   DevelopmentHead,
   DevelopmentContent,
-  JSCode,
-  DevelopmentScroll
+  JSCode
 } from "../../development/components/DevelopmentComp";
 
 const Sass2 = () => {

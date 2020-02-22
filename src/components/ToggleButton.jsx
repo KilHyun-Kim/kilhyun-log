@@ -23,7 +23,7 @@ class ToggleButton extends Component {
       document.querySelector(".leftBlock").style.transform =
         "translateX(-100%)";
       document.querySelector(".leftButton").style.transform =
-        "translateX(-1000%)";
+        "translateX(-930%)";
       document.querySelector(".slick-prev").style.display = "block";
     }
   }

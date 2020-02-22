@@ -1,25 +1,19 @@
 header {
-  display: flex;
-  flex-direction: column;
 }
 .headerWrap {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 13vh;
   background-image: url(../image/universe.jpg);
   width: 100%;
   position: relative;
   z-index: 3;
+  justify-content: space-around;
 }
 
-.scrolled {
-  position: fixed;
-}
-.nav-links {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
+/* logo */
+._logo {
+  text-align: center;
 }
 
 .link_logo {
@@ -27,18 +21,23 @@ header {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 80px;
-  text-align: center;
   text-decoration: none;
+}
+
+.scrolled {
+  position: fixed;
 }
 
 /*  nav 바  */
 
 nav {
-  position: relative;
-  justify-content: space-around;
-  width: 33%;
+  width: 30%;
 }
-
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .nav-links a {
   text-transform: uppercase;
   color: #fff;
@@ -49,17 +48,23 @@ nav {
 .nav-links a:hover {
   color: #bbb;
 }
-
+/* menuList , 화면 작아졌을때 짝대기 세개 */
 .menu_list {
   display: none;
   cursor: pointer;
+  width: 15%;
 }
 .menu_list div {
   background-color: #fff;
-  width: 25px;
+  width: 40%;
   height: 2px;
   margin: 5px;
   transition: all 0.3s ease;
+}
+/* infoList , 화면 작아졌을때 왼쪽 버튼 옮길거 */
+
+.Info_list {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,12 +72,27 @@ nav {
     overflow-x: hidden;
   }
 
+  /* logo */
+  ._logo {
+    width: 70%;
+  }
+  .link_logo {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2.2em;
+    text-decoration: none;
+  }
+  nav {
+    display: none;
+  }
+
   .nav-links {
     position: absolute;
     height: 80vh;
     top: 11.5vh;
     background-color: #000;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
@@ -95,9 +115,22 @@ nav {
   .menu_list {
     display: inline-block;
   }
+
+  .Info_list {
+    display: inline-block;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+  }
+  .Info_list img {
+    border-radius: 50%;
+    width: 30%;
+    height: 100%;
+  }
 }
 .nav-active {
   transform: translateX(0%);
+  display: flex;
 }
 
 @keyframes navLinkFade {

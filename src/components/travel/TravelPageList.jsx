@@ -29,20 +29,22 @@ const TravelPageList = props => {
     }
   ];
   return (
-    <div className="TravelContainer">
-      <TravelFolder Folder="사진" />
-      <div className="TravelLists">
-        {values.map((value, index) => {
-          return (
-            <TravelPage
-              href={value.href}
-              src={value.src}
-              mapSrc={value.mapSrc}
-              info={value.info}
-              key={index}
-            />
-          );
-        })}
+    <div className="TravelWrapper">
+      <div className="TravelContainer">
+        <TravelFolder Folder="사진" />
+        <div className="TravelLists">
+          {values.map((value, index) => {
+            return (
+              <TravelPage
+                href={value.href}
+                src={value.src}
+                mapSrc={value.mapSrc}
+                info={value.info}
+                key={index}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

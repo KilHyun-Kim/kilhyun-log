@@ -1,10 +1,10 @@
 .projectContainer {
   width: 80%;
-  margin: 0 auto 300px;
+  margin: 0 auto 150px;
   text-align: center;
 }
 .__title {
-  margin: 100px 0 30px;
+  padding: 100px 0 30px;
 }
 
 .__title h1 {
@@ -22,4 +22,18 @@
   width: 80%;
   border: 20px solid #000;
   border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .__title {
+    padding: 50px 0 30px;
+    font-size: 0.5em;
+  }
+  .__title h1 {
+    padding: 10px;
+    border-radius: 10px/10px;
+  }
+  .__listContainer {
+    border: 10px solid #000;
+    border-radius: 4px;
+  }
 }
