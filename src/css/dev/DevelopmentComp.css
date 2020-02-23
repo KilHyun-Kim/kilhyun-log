@@ -1,6 +1,7 @@
 .DevContainer {
   width: 60%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .DevHead {
@@ -71,7 +72,7 @@ pre code {
   color: white;
 }
 ._codeVerse {
-  color: #94fffa;
+  color: #a8d1ff;
 }
 ._codePurple {
   color: #dd73dd;
@@ -109,4 +110,32 @@ pre code {
 .ScrollDiv p:hover {
   text-decoration: underline;
   color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  .DevContainer {
+    width: 70%;
+  }
+  .DevContent h2 {
+    border-left: 5px #dd4c39 solid;
+    padding-left: 10px;
+    font-size: 1em;
+  }
+  .DevContent h3 {
+    font-size: 0.9em;
+  }
+  .DevContent p {
+    font-size: 0.7em;
+  }
+}
+
+/* DevImg */
+.DevImg {
+  width: 30%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.DevImg img {
+  width: 100%;
 }

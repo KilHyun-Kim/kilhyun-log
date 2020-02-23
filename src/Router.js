@@ -18,10 +18,14 @@ import SassList from "./components/development/sass/SassList";
 import Sass1 from "./components/development/sass/Sass1";
 import Sass2 from "./components/development/sass/Sass2";
 import React1 from "./components/development/react/React1";
+import React5 from "./components/development/react/React5";
 import Info from "./components/Info";
+// import SaipanPage from "./components/travel/SaipanPage";
+// import OsakaPage from "./components/travel/OsakaPage";
 export default () => (
   <Router>
     <Header title="KILHYUN.LOG" />
+    <Route exact path="/kilhyun-log" component={Main} />
     <Route exact path="/" component={Main} />
     <Route exact path="/info" component={Info} />
     <Route exact path="/project" component={Project} />
@@ -43,6 +47,7 @@ export default () => (
     <Route exact path="/development/typescript/1" component={Ts1} />
     <Route exact path="/development/react" component={ReactPageList} />
     <Route exact path="/development/react/1" component={React1} />
+    <Route exact path="/development/react/5" component={React5} />
     <Route exact path="/development/sass" component={SassList} />
     <Route exact path="/development/sass/1" component={Sass1} />
     <Route exact path="/development/sass/2" component={Sass2} />

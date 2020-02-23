@@ -27,6 +27,14 @@ const TravelPageList = props => {
       mapSrcAlt: "오사카",
       info: "Osaka"
     }
+    // {
+    //   href: "/travel/jeju",
+    //   src: "https://static.thenounproject.com/png/3129331-200.png",
+    //   srcAlt: "폴더",
+    //   mapSrc: "https://static.thenounproject.com/png/1651969-200.png",
+    //   mapSrcAlt: "제주도",
+    //   info: "Jeju"
+    // }
   ];
   return (
     <div className="TravelWrapper">

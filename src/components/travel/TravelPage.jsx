@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/TravelPage.css";
-import ExifOrientationImg from "react-exif-orientation-img";
+// import ExifOrientationImg from "react-exif-orientation-img";
+import { Link } from "react-router-dom";
 
 export const TravelFolder = props => {
   return (
@@ -30,34 +31,82 @@ export const TravelFolder = props => {
   );
 };
 
-export const TravelImage = props => {
-  console.log(props.src);
-  return (
-    <div className="TravelImages">
-      <div className="__Images">
-        <ExifOrientationImg src={props.src1} alt={props.alt1} />
-        <p>{props.text1}</p>
-      </div>
-      <div className="__Images">
-        <ExifOrientationImg src={props.src2} alt={props.alt2} />
-        <p>{props.text2}</p>
-      </div>
-      <div className="__Images">
-        <ExifOrientationImg src={props.src3} alt={props.alt3} />
-        <p>{props.text3}</p>
-      </div>
-      <div className="__Images">
-        <ExifOrientationImg src={props.src4} alt={props.alt4} />
-        <p>{props.text4}</p>
-      </div>
-    </div>
-  );
-};
+// export const TravelImage = props => {
+//   let cnt = 0;
+//   const openLayer = (IdName, tpos, lpos) => {
+//     if (cnt === 0) {
+//       cnt++;
+//       const pop = document.getElementById(IdName);
+
+//       if (IdName >= 3 && IdName < 6) {
+//         tpos = 430;
+//       } else if (IdName >= 6 && IdName < 9) {
+//         tpos = 680;
+//       } else if (IdName >= 9 && IdName < 12) {
+//         tpos = 920;
+//       } else if (IdName >= 12 && IdName < 15) {
+//         tpos = 1200;
+//       } else if (IdName >= 15 && IdName < 18) {
+//         tpos = 1450;
+//       } else if (IdName >= 18 && IdName < 21) {
+//         tpos = 1700;
+//       } else if (IdName >= 21 && IdName < 24) {
+//         tpos = 1950;
+//       } else if (IdName >= 24 && IdName < 27) {
+//         tpos = 2200;
+//       } else if (IdName >= 27 && IdName < 30) {
+//         tpos = 2450;
+//       } else if (IdName >= 30 && IdName < 33) {
+//         tpos = 2700;
+//       }
+//       pop.style.display = "block";
+//       pop.style.top = tpos + "px";
+//       pop.style.left = lpos + "px";
+//     }
+//   };
+//   const closeLayer = IdName => {
+//     const pop = document.getElementById(IdName);
+//     pop.style.display = "none";
+//     cnt = 0;
+//   };
+//   const style = {
+//     position: "absolute",
+//     width: "100%",
+//     height: "auto",
+//     display: "none",
+//     zIndex: "2",
+//     backgroundColor: "black"
+//   };
+//   const style2 = {
+//     width: "50%",
+//     height: "100%",
+//     margin: "0 auto"
+//   };
+
+//   const imageList = images.map((image, index) => (
+//     <>
+//       <div
+//         className="img_wrapper box1"
+//         key={index}
+//         onClick={() => openLayer(index, 0, 0)}
+//       >
+//         <ExifOrientationImg src={image.src} />
+//         <p>{image.text}</p>
+//         <div className="hover_box" key={index}></div>
+//       </div>
+//       <div id={index} style={style} onClick={() => closeLayer(index)}>
+//         <ExifOrientationImg src={image.src} style={style2} />
+//       </div>
+//     </>
+//   ));
+
+//   return { imageList };
+// };
 
 const TravelPage = props => {
   return (
     <div className="TravelLists">
-      <a href={props.href}>
+      <Link to={props.href}>
         <div className="Koki">
           <img src={props.src} alt={props.srcAlt} />
           <div className="MapImage">
@@ -65,7 +114,7 @@ const TravelPage = props => {
           </div>
           <p>{props.info}</p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

@@ -1,18 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "../css/BasicPageComp.css";
 const BasicPageComp = props => {
   return (
     <div className="__listContent">
-      <a href={props.hyperLink} className="listimage">
+      <Link to={props.hyperLink} className="listimage">
         <img src={props.src} alt={props.alt} />
-      </a>
+      </Link>
       <div className="listExplanation">
-        <a href={props.hyperLink} className="link_post">
+        <Link to={props.hyperLink} className="link_post">
           <strong className="tit_post">{props.projectName}</strong>
           <p className="p_post">{props.explanation}</p>
-        </a>
+        </Link>
         <div className="detael_info">
-          <a href={props.hyperLink}>{props.addEx}</a>
+          <Link to={props.hyperLink}>{props.addEx}</Link>
           <span className="txt_bar"></span>
           <span className="txt_date">{props.days}</span>
         </div>

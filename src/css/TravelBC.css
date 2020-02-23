@@ -1,0 +1,84 @@
+.__TravelContainer {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.__TravelTopic h1 {
+  display: inline-block;
+  background-color: #000;
+  padding: 15px;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 20px/20px;
+  font-weight: bold;
+}
+
+.__TravelWrapper {
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* 위 네장 가지런히 배열 */
+
+.__imageFrame {
+  display: inline-block;
+  width: 30%;
+  margin-right: 30px;
+}
+.__imageFrame img {
+  width: 100%;
+  height: 100%;
+}
+
+.__imageFrame:last-child {
+  margin-right: 0;
+}
+
+.img_wrapper {
+  position: relative;
+  width: 20%;
+  height: 30%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  z-index: 1;
+  padding: 1%;
+}
+.img_wrapper p {
+  font-size: 0.8em;
+  font-family: "Jua", sans-serif;
+}
+.hover_box {
+  width: 301px;
+  text-align: center;
+  background: #111;
+}
+
+.box1 .hover_box {
+  transition: all ease-in 0.2s;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.img_wrapper.box1:hover .hover_box {
+  opacity: 0.8;
+}
+
+.img_wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img_wrapper:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* 이미지 오른쪽 위 복수개 표현 icon*/

@@ -37,7 +37,7 @@ main {
 }
 
 .ProjectContainer ul {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .ProjectContainer a {
@@ -46,8 +46,8 @@ main {
   text-decoration: none;
 }
 .ProjectContainer img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 }
 
 /* workroom circle */

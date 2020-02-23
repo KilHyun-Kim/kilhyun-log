@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "../css/MainSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 export default class MainSlider extends Component {
   static defaultProps = {
@@ -29,63 +30,63 @@ export default class MainSlider extends Component {
     };
     return (
       <div className="__projectContainer">
-        <a href="/development">{this.props.title}</a>
+        <Link to="/development">{this.props.title}</Link>
         <div className="ProjectContainer">
           <ul>
             <Slider {...settings} className="__Slider">
               <li>
-                <a href={this.props._link1}>
+                <Link to={this.props._link1}>
                   <img
                     src={this.props._src1}
                     className="imagesize"
                     width="200"
                     alt={this.props.alt1}
                   />
-                </a>
-                <a href="/">{this.props.topic1}</a>
+                </Link>
+                <Link to={this.props._link1}>{this.props.topic1}</Link>
               </li>
               <li>
-                <a href={this.props._link2}>
+                <Link to={this.props._link2}>
                   <img
                     src={this.props._src2}
                     className="imagesize"
                     width="200"
                     alt={this.props.alt2}
                   />
-                </a>
-                <a href="/">{this.props.topic2}</a>
+                </Link>
+                <Link to={this.props._link2}>{this.props.topic2}</Link>
               </li>
               <li>
-                <a href={this.props._link3}>
+                <Link to={this.props._link3}>
                   <img
                     src={this.props._src3}
                     className="imagesize"
                     alt={this.props.alt3}
                   />
-                </a>
-                <a href="/">{this.props.topic3}</a>
+                </Link>
+                <Link to={this.props._link3}>{this.props.topic3}</Link>
               </li>
               <li>
-                <a href={this.props._link4}>
+                <Link to={this.props._link4}>
                   <img
                     src={this.props._src4}
                     className="imagesize"
                     width="200"
                     alt={this.props.alt4}
                   />
-                </a>
-                <a href="/">{this.props.topic4}</a>
+                </Link>
+                <Link to={this.props._link4}>{this.props.topic4}</Link>
               </li>
 
               <li>
-                <a href={this.props._link5}>
+                <Link to={this.props._link5}>
                   <img
                     src={this.props._src5}
                     className="imagesize"
                     alt={this.props.alt5}
                   />
-                </a>
-                <a href="/">{this.props.topic5}</a>
+                </Link>
+                <Link to={this.props._link5}>{this.props.topic5}</Link>
               </li>
             </Slider>
           </ul>

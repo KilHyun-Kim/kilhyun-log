@@ -89,10 +89,8 @@
 
 .TravelImageLists {
   padding: 30px;
-  display: flex;
   text-align: center;
   align-items: center;
-  flex-direction: column;
 }
 /* TravelImages */
 .TravelImages {
@@ -102,22 +100,22 @@
   justify-content: space-around;
   margin-bottom: 30px;
 }
-.TravelImages img {
-  width: 20%;
-}
 
 .__Images {
   display: flex;
   flex-direction: column;
   width: 20%;
+  height: 20%;
+  background: #ddd;
 }
 .__Images p {
+  padding: 5px 0;
   font-size: 0.8em;
 }
 .__Images img {
   border: 1px solid #ddd;
-  width: 100%;
-  height: auto;
+  width: 90%;
+  margin: 5px auto;
 }
 
 @media screen and (max-width: 768px) {

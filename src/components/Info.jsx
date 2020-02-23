@@ -3,6 +3,8 @@ import { GoMarkGithub } from "react-icons/go";
 import { FaInstagram } from "react-icons/fa";
 import "../css/IntroduceMySelf.css";
 import Kilhyun from "../image/image001.png";
+import { Link } from "react-router-dom";
+
 const Info = () => {
   return (
     <div className="myselfContainer">
@@ -112,17 +114,17 @@ const Info = () => {
       <div className="__SNSIcon">
         <ul>
           <li>
-            <a href="https://github.com/KilHyun-Kim" target="blank">
+            <Link to="https://github.com/KilHyun-Kim" target="blank">
               <GoMarkGithub size="100%" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/kiryeonee_wj/?hl=ko"
+            <Link
+              to="https://www.instagram.com/kiryeonee_wj/?hl=ko"
               target="blank"
             >
               <FaInstagram size="90%" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
