@@ -20,8 +20,8 @@ import Sass2 from "./components/development/sass/Sass2";
 import React1 from "./components/development/react/React1";
 import React5 from "./components/development/react/React5";
 import Info from "./components/Info";
-// import SaipanPage from "./components/travel/SaipanPage";
-// import OsakaPage from "./components/travel/OsakaPage";
+import OsakaPage from "./components/travel/OsakaPage";
+import SaipanPage from "./components/travel/SaipanPage";
 export default () => (
   <Router>
     <Header title="KILHYUN.LOG" />
@@ -54,5 +54,7 @@ export default () => (
 
     <Route exact path="/travel" component={TravelPageList} />
     <Route exact path="/travel/koki" component={KokiPage} />
+    <Route exact path="/travel/osaka" component={OsakaPage} />
+    <Route exact path="/travel/saipan" component={SaipanPage} />
   </Router>
 );

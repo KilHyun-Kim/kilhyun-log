@@ -31,8 +31,7 @@ import koki29 from "../../image/koki/koki29.jpg";
 import koki30 from "../../image/koki/koki30.jpg";
 import koki31 from "../../image/koki/koki31.jpg";
 import koki32 from "../../image/koki/koki32.jpg";
-import { TravelFolder } from "./TravelPage";
-import ExifOrientationImg from "react-exif-orientation-img";
+import { TravelFolder, TravelImage } from "./TravelPage";
 
 import "../../css/TravelBC.css";
 
@@ -72,79 +71,11 @@ const KokiPage = () => {
     { src: koki32, text: "사실 저녁에 길잃어서 살짝 다툼.jpg" }
   ]);
 
-  let cnt = 0;
-  const openLayer = (IdName, tpos, lpos) => {
-    if (cnt === 0) {
-      cnt++;
-      const pop = document.getElementById(IdName);
-
-      if (IdName >= 3 && IdName < 6) {
-        tpos = 430;
-      } else if (IdName >= 6 && IdName < 9) {
-        tpos = 680;
-      } else if (IdName >= 9 && IdName < 12) {
-        tpos = 920;
-      } else if (IdName >= 12 && IdName < 15) {
-        tpos = 1200;
-      } else if (IdName >= 15 && IdName < 18) {
-        tpos = 1450;
-      } else if (IdName >= 18 && IdName < 21) {
-        tpos = 1700;
-      } else if (IdName >= 21 && IdName < 24) {
-        tpos = 1950;
-      } else if (IdName >= 24 && IdName < 27) {
-        tpos = 2200;
-      } else if (IdName >= 27 && IdName < 30) {
-        tpos = 2450;
-      } else if (IdName >= 30 && IdName < 33) {
-        tpos = 2700;
-      }
-      pop.style.display = "block";
-      pop.style.top = tpos + "px";
-      pop.style.left = lpos + "px";
-    }
-  };
-  const closeLayer = IdName => {
-    const pop = document.getElementById(IdName);
-    pop.style.display = "none";
-    cnt = 0;
-  };
-  const style = {
-    position: "absolute",
-    width: "100%",
-    height: "auto",
-    display: "none",
-    zIndex: "2",
-    backgroundColor: "black"
-  };
-  const style2 = {
-    width: "50%",
-    height: "100%",
-    margin: "0 auto"
-  };
-
-  const imageList = images.map((image, index) => (
-    <>
-      <div
-        className="img_wrapper box1"
-        key={index}
-        onClick={() => openLayer(index, 0, 0)}
-      >
-        <ExifOrientationImg src={image.src} />
-        <p>{image.text}</p>
-        <div className="hover_box" key={index}></div>
-      </div>
-      <div id={index} style={style} onClick={() => closeLayer(index)}>
-        <ExifOrientationImg src={image.src} style={style2} />
-      </div>
-    </>
-  ));
-
   return (
     <div className="TravelWrapper">
       <div className="TravelContainer">
         <TravelFolder Folder="Kota Kinabalu" />
-        <div className="TravelImageLists">{imageList}</div>
+        <TravelImage images={images} />
       </div>
     </div>
   );

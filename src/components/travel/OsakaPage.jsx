@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { TravelFolder, TravelImage } from "./TravelPage";
+import "../../css/TravelBC.css";
+
 import osaka1 from "../../image/osaka/osaka(1).jpg";
 import osaka2 from "../../image/osaka/osaka(2).jpg";
 import osaka3 from "../../image/osaka/osaka(3).jpg";
@@ -37,123 +39,53 @@ import osaka34 from "../../image/osaka/osaka(34).jpg";
 import osaka35 from "../../image/osaka/osaka(35).jpg";
 import osaka36 from "../../image/osaka/osaka(36).jpg";
 const OsakaPage = () => {
-  const imageValues = [
-    {
-      src1: osaka1,
-      text1: "사이판으로 가는 비행기표!.jpg",
-      src2: osaka2,
-      text2: "사이판에서의 숙소앞 풍경.jpg",
-      src3: osaka3,
-      text3: "숙소 앞 해변가.jpg",
-      src4: osaka4,
-      text4: "사이판 명소 만세절벽.jpg"
-    },
-    {
-      src1: osaka5,
-      text1: "한국인 위령탑.jpg",
-      src2: osaka6,
-      text2: "저녁 메뉴 고르는 부모님.jpg",
-      src3: osaka7,
-      text3: "저녁은 T Bone Steak.jpg",
-      src4: osaka8,
-      text4: "사이판은 바다가 예쁨.jpg"
-    },
-    {
-      src1: osaka9,
-      text1: "MaNaGaHa Island.jpg",
-      src2: osaka10,
-      text2: "폼좀 잡아봄.jpg",
-      src3: osaka11,
-      text3: "사이판 초저녁.jpg",
-      src4: osaka12,
-      text4: "여기는 카지노.jpg"
-    },
-    {
-      src1: osaka13,
-      text1: "일몰과 나.jpg",
-      src2: osaka15,
-      text2: "신난 엄마.jpg",
-      src3: osaka16,
-      text3: "가족사진.jpg",
-      src4: osaka17,
-      text4: "예쁜 새 모형.jpg"
-    },
-    {
-      src1: osaka21,
-      text1: "한적한 사이판 해변.jpg",
-      src2: osaka18,
-      text2: "저녁식사를 위해.jpg",
-      src3: osaka19,
-      text3: "식사후 해변을 거닐며 엄마.jpg",
-      src4: osaka20,
-      text4: "사이판의 밤거리.jpg"
-    },
-    {
-      src1: osaka21,
-      text1: "평범한 사이판 풍경.jpg",
-      src2: osaka22,
-      text2: "닭 아저씨에게 어퍼컷을 날리는 엄마.jpg",
-      src3: osaka23,
-      text3: "예쁜 풍경 사이판.jpg",
-      src4: osaka24,
-      text4: "예쁜 풍경 사이판.jpg"
-    },
-    {
-      src1: osaka25,
-      text1: "평범한 사이판 풍경.jpg",
-      src2: osaka26,
-      text2: "닭 아저씨에게 어퍼컷을 날리는 엄마.jpg",
-      src3: osaka27,
-      text3: "예쁜 풍경 사이판.jpg",
-      src4: osaka28,
-      text4: "예쁜 풍경 사이판.jpg"
-    },
-    {
-      src1: osaka29,
-      text1: "평범한 사이판 풍경.jpg",
-      src2: osaka30,
-      text2: "닭 아저씨에게 어퍼컷을 날리는 엄마.jpg",
-      src3: osaka31,
-      text3: "예쁜 풍경 사이판.jpg",
-      src4: osaka32,
-      text4: "예쁜 풍경 사이판.jpg"
-    },
-    {
-      src1: osaka33,
-      text1: "평범한 사이판 풍경.jpg",
-      src2: osaka34,
-      text2: "닭 아저씨에게 어퍼컷을 날리는 엄마.jpg",
-      src3: osaka35,
-      text3: "예쁜 풍경 사이판.jpg",
-      src4: osaka36,
-      text4: "예쁜 풍경 사이판.jpg"
-    }
-  ];
-  // return (
-  //   <div className="TravelWrapper">
-  //     <div className="TravelContainer">
-  //       <TravelFolder Folder="Kota Kinabalu" />
-  //       <div className="TravelImageLists">
-  //         {imageValues.map((imagevalue, index) => {
-  //           return (
-  //             <TravelImage
-  //               src1={imagevalue.src1}
-  //               text1={imagevalue.text1}
-  //               src2={imagevalue.src2}
-  //               text2={imagevalue.text2}
-  //               src3={imagevalue.src3}
-  //               text3={imagevalue.text3}
-  //               src4={imagevalue.src4}
-  //               text4={imagevalue.text4}
-  //               alt="koki1"
-  //               key={index}
-  //             />
-  //           );
-  //         })}
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
+  const [images] = useState([
+    { src: osaka1, text: "숙소에서 함께 김치!!.jpg" },
+    { src: osaka2, text: "비행기 처음타는 우지.jpg" },
+    { src: osaka3, text: "비행기 안에서 풍경.jpg" },
+    { src: osaka4, text: "비행기가 맘에든 우지.jpg" },
+    { src: osaka5, text: "비행기 쓰담 우지.jpg" },
+    { src: osaka6, text: "머리 꾸미는 우지.jpg" },
+    { src: osaka7, text: "우지의 뒷모습.jpg" },
+    { src: osaka8, text: "Kota Kinabalu!.jpg" },
+    { src: osaka9, text: "코타키나발루 거리.jpg" },
+    { src: osaka10, text: "좋은날씨와 예쁜꽃.jpg" },
+    { src: osaka11, text: "풍경과 우지의 뒷모습.jpg" },
+    { src: osaka12, text: "맛집이라면서요ㅠ.jpg" },
+    { src: osaka13, text: "커피집에서 지친 우지.jpg" },
+    { src: osaka14, text: "어머 이 각도도 이쁘냐.jpg" },
+    { src: osaka15, text: "코키 예쁜 건물.jpg" },
+    { src: osaka16, text: "코키 예쁜 건물(2).jpg" },
+    { src: osaka17, text: "코타키나발루 거리.jpg" },
+    { src: osaka18, text: "코끼리와 우지.jpg" },
+    { src: osaka19, text: "졸예다.jpg" },
+    { src: osaka20, text: "코키 거리.jpg" },
+    { src: osaka21, text: "코키를 뒤집어 놓으셨다.jpg" },
+    { src: osaka22, text: "커플샷.jpg" },
+    { src: osaka23, text: "얼굴티 네 맞습니다.jpg" },
+    { src: osaka24, text: "예쁜배경에서 나.jpg" },
+    { src: osaka25, text: "어깨 짱짱맨.jpg" },
+    { src: osaka26, text: "ㅋㅋㅋㅋ귀여워.jpg" },
+    { src: osaka27, text: "어머 예쁘세요.jpg" },
+    { src: osaka28, text: "해보러 가는길.jpg" },
+    { src: osaka29, text: "세계 3대 석양 우지.jpg" },
+    { src: osaka30, text: "너가 더 예뻐.jpg" },
+    { src: osaka31, text: "석양 맛집이네.jpg" },
+    { src: osaka32, text: "사실 저녁에 길잃어서 살짝 다툼.jpg" },
+    { src: osaka33, text: "석양 맛집이네.jpg" },
+    { src: osaka34, text: "석양 맛집이네.jpg" },
+    { src: osaka35, text: "석양 맛집이네.jpg" },
+    { src: osaka36, text: "석양 맛집이네.jpg" }
+  ]);
+
+  return (
+    <div className="TravelWrapper">
+      <div className="TravelContainer">
+        <TravelFolder Folder="Osaka" />
+        <TravelImage images={images} />
+      </div>
+    </div>
+  );
 };
 
 export default OsakaPage;

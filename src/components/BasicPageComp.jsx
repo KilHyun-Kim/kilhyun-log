@@ -2,6 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "../css/BasicPageComp.css";
+
+export const PageSequence = props => {
+  return (
+    <div className="listSequence">
+      <ul>
+        <li>1</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  );
+};
+
 const BasicPageComp = props => {
   return (
     <div className="__listContent">

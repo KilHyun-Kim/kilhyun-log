@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../../Title";
-import BasicPageComp from "../../BasicPageComp";
+import BasicPageComp, { PageSequence } from "../../BasicPageComp";
 
 const ReactPageList = () => {
   const reactValue = [

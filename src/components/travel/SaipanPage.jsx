@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { TravelFolder, TravelImage } from "./TravelPage";
+import "../../css/TravelBC.css";
+
 import saipan1 from "../../image/saipan/saipan(1).jpg";
 import saipan2 from "../../image/saipan/saipan(2).jpg";
 import saipan3 from "../../image/saipan/saipan(3).jpg";
@@ -26,91 +28,40 @@ import saipan23 from "../../image/saipan/saipan(23).jpg";
 import saipan24 from "../../image/saipan/saipan(24).jpg";
 
 const SaipanPage = () => {
-  const imageValues = [
-    {
-      src1: saipan1,
-      text1: "사이판으로 가는 비행기표!.jpg",
-      src2: saipan2,
-      text2: "사이판에서의 숙소앞 풍경.jpg",
-      src3: saipan3,
-      text3: "숙소 앞 해변가.jpg",
-      src4: saipan4,
-      text4: "사이판 명소 만세절벽.jpg"
-    },
-    {
-      src1: saipan5,
-      text1: "한국인 위령탑.jpg",
-      src2: saipan6,
-      text2: "저녁 메뉴 고르는 부모님.jpg",
-      src3: saipan7,
-      text3: "저녁은 T Bone Steak.jpg",
-      src4: saipan8,
-      text4: "사이판은 바다가 예쁨.jpg"
-    },
-    {
-      src1: saipan9,
-      text1: "MaNaGaHa Island.jpg",
-      src2: saipan10,
-      text2: "폼좀 잡아봄.jpg",
-      src3: saipan11,
-      text3: "사이판 초저녁.jpg",
-      src4: saipan12,
-      text4: "여기는 카지노.jpg"
-    },
-    {
-      src1: saipan13,
-      text1: "일몰과 나.jpg",
-      src2: saipan15,
-      text2: "신난 엄마.jpg",
-      src3: saipan16,
-      text3: "가족사진.jpg",
-      src4: saipan17,
-      text4: "예쁜 새 모형.jpg"
-    },
-    {
-      src1: saipan21,
-      text1: "한적한 사이판 해변.jpg",
-      src2: saipan18,
-      text2: "저녁식사를 위해.jpg",
-      src3: saipan19,
-      text3: "식사후 해변을 거닐며 엄마.jpg",
-      src4: saipan20,
-      text4: "사이판의 밤거리.jpg"
-    },
-    {
-      src1: saipan22,
-      text1: "평범한 사이판 풍경.jpg",
-      src2: saipan23,
-      text2: "닭 아저씨에게 어퍼컷을 날리는 엄마.jpg",
-      src3: saipan24,
-      text3: "예쁜 풍경 사이판.jpg"
-    }
-  ];
-  // return (
-  //   <div className="TravelWrapper">
-  //     <div className="TravelContainer">
-  //       <TravelFolder Folder="Kota Kinabalu" />
-  //       <div className="TravelImageLists">
-  //         {imageValues.map((imagevalue, index) => {
-  //           return (
-  //             <TravelImage
-  //               src1={imagevalue.src1}
-  //               text1={imagevalue.text1}
-  //               src2={imagevalue.src2}
-  //               text2={imagevalue.text2}
-  //               src3={imagevalue.src3}
-  //               text3={imagevalue.text3}
-  //               src4={imagevalue.src4}
-  //               text4={imagevalue.text4}
-  //               alt="koki1"
-  //               key={index}
-  //             />
-  //           );
-  //         })}
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
+  const [images] = useState([
+    { src: saipan1, text: "숙소에서 함께 김치!!.jpg" },
+    { src: saipan2, text: "비행기 처음타는 우지.jpg" },
+    { src: saipan3, text: "비행기 안에서 풍경.jpg" },
+    { src: saipan4, text: "비행기가 맘에든 우지.jpg" },
+    { src: saipan5, text: "비행기 쓰담 우지.jpg" },
+    { src: saipan6, text: "머리 꾸미는 우지.jpg" },
+    { src: saipan7, text: "우지의 뒷모습.jpg" },
+    { src: saipan8, text: "Kota Kinabalu!.jpg" },
+    { src: saipan9, text: "코타키나발루 거리.jpg" },
+    { src: saipan10, text: "좋은날씨와 예쁜꽃.jpg" },
+    { src: saipan11, text: "풍경과 우지의 뒷모습.jpg" },
+    { src: saipan12, text: "맛집이라면서요ㅠ.jpg" },
+    { src: saipan13, text: "커피집에서 지친 우지.jpg" },
+    { src: saipan14, text: "어머 이 각도도 이쁘냐.jpg" },
+    { src: saipan15, text: "코키 예쁜 건물.jpg" },
+    { src: saipan16, text: "코키 예쁜 건물(2).jpg" },
+    { src: saipan17, text: "코타키나발루 거리.jpg" },
+    { src: saipan18, text: "코끼리와 우지.jpg" },
+    { src: saipan19, text: "졸예다.jpg" },
+    { src: saipan20, text: "코키 거리.jpg" },
+    { src: saipan21, text: "코키를 뒤집어 놓으셨다.jpg" },
+    { src: saipan22, text: "커플샷.jpg" },
+    { src: saipan23, text: "얼굴티 네 맞습니다.jpg" },
+    { src: saipan24, text: "예쁜배경에서 나.jpg" }
+  ]);
+  return (
+    <div className="TravelWrapper">
+      <div className="TravelContainer">
+        <TravelFolder Folder="saipan" />
+        <TravelImage images={images} />
+      </div>
+    </div>
+  );
 };
 
 export default SaipanPage;

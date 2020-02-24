@@ -37,12 +37,12 @@
   height: 80%;
 }
 
-/* BackFace */
+/* ProjectBackface */
 
 .panelList {
   display: flex;
   width: 100%;
-  height: 318px;
+  height: 45vh;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -88,7 +88,7 @@
 .backcontent {
   display: inline-block;
   width: 70%;
-  height: 60%;
+  height: 70%;
   margin: 15%;
 }
 .backcontent h3 {
@@ -170,7 +170,7 @@
   .panelList {
     display: flex;
     width: 100%;
-    height: 94px;
+    height: 15vh;
     justify-content: space-between;
     margin-bottom: 50px;
   }

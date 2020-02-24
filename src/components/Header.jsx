@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import "../css/Header.css";
 import HeaderNav from "./HeaderNav";
+import { Link } from "react-router-dom";
 
 import React, { Component } from "react";
 
@@ -47,12 +48,12 @@ class Header extends Component {
           className={this.state.scrolled ? "headerWrap scrolled" : "headerWrap"}
         >
           <div className="Info_list">
-            <a href="/Info">
+            <Link to="/Info">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQz1FuiG57wE9MsScynSxPmxwx8f15jggewfqA-VxPtoWK1uMsw"
                 alt="info"
               />
-            </a>
+            </Link>
           </div>
           <Logo logo="KILHYUN.LOG" />
           <div className="menu_list" onClick={this.handleClick}>

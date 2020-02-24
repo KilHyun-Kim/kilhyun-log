@@ -1,3 +1,7 @@
+.__listContent:hover {
+  text-decoration: underline;
+}
+
 .__listContent {
   display: flex;
   padding: 24px 50px 50px;
