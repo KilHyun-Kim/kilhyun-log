@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaListAlt } from "react-icons/fa";
+import { TiArrowLeftOutline, TiArrowRightOutline } from "react-icons/ti";
 
 import "../css/BasicPageComp.css";
 
@@ -7,11 +9,50 @@ export const PageSequence = props => {
   return (
     <div className="listSequence">
       <ul>
-        <li>1</li>
+        <li>
+          <Link to={props.list1} />
+        </li>
         <li></li>
         <li></li>
       </ul>
     </div>
+  );
+};
+
+export const PageFooter = props => {
+  return (
+    <footer>
+      <div className="PageFooterContainer">
+        <ul>
+          <li>
+            <Link to={props.Prev}>
+              <p>
+                <TiArrowLeftOutline />
+                <span>Previous Post</span>
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link to={props.List}>
+              <p>
+                <FaListAlt />
+                <span>List</span>
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link to={props.Next}>
+              <p>
+                Next Post
+                <span>
+                  <TiArrowRightOutline />
+                </span>
+              </p>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </footer>
   );
 };
 

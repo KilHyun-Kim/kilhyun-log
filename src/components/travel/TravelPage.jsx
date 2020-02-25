@@ -2,6 +2,7 @@ import React from "react";
 import "../../css/TravelPage.css";
 // import ExifOrientationImg from "react-exif-orientation-img";
 import { Link } from "react-router-dom";
+import { FaListAlt } from "react-icons/fa";
 import ExifOrientationImg from "react-exif-orientation-img";
 
 export const TravelFolder = props => {
@@ -74,7 +75,7 @@ export const TravelImage = props => {
     width: "100%",
     height: "100",
     display: "none",
-    zIndex: "2",
+    zIndex: "4",
     top: "0",
     backgroundColor: "black"
   };
@@ -102,6 +103,20 @@ export const TravelImage = props => {
   ));
 
   return <div className="TravelImageLists">{imageList}</div>;
+};
+
+export const TravelFooter = props => {
+  return (
+    <footer>
+      <div className="TravelFooterContainer">
+        <Link to={props.List}>
+          <span>
+            <FaListAlt /> 목록으로
+          </span>
+        </Link>
+      </div>
+    </footer>
+  );
 };
 
 const TravelPage = props => {

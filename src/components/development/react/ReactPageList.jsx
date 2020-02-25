@@ -69,6 +69,9 @@ const ReactPageList = () => {
           );
         })}
       </div>
+      <footer>
+        <PageSequence list1="1" />
+      </footer>
     </div>
   );
 };

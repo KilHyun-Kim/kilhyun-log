@@ -24,6 +24,18 @@ export const DevelopmentContent = props => {
     </div>
   );
 };
+export const DevelopmentExplain = props => {
+  return (
+    <div className="DevExplain">
+      <h3>{props.EX1}</h3>
+      <h4>{props.EX11}</h4>
+      <h4>{props.EX12}</h4>
+      <h3>{props.EX2}</h3>
+      <h4>{props.EX21}</h4>
+      <h4>{props.EX22}</h4>
+    </div>
+  );
+};
 
 export const JSCode = props => {
   return (
@@ -61,6 +73,7 @@ export const JSCode = props => {
           <span className={props.color22}>{props.text22}</span>
           <span className={props.color23}>{props.text23}</span>
           <span className={props.color24}>{props.text24}</span>
+          <span className={props.color25}>{props.text25}</span>
         </p>
         <p>
           <span className={props.color30}>{props.text30}</span>

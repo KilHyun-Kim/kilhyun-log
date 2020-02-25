@@ -4,6 +4,8 @@ import ProjectTopic, {
   ProjectImage,
   ProjectBackface
 } from "../ProjectTopic";
+import { PageFooter } from "../../BasicPageComp";
+
 import workroom8363 from "../../../image/workroom8363.png";
 const Workroom8363 = () => {
   return (
@@ -67,6 +69,11 @@ const Workroom8363 = () => {
         explain2="2. 돈의 거래"
         p21="- 돈을 거래함으로써 동기부여 및 중요성을 파악할 수 있음."
         p22="- 소비자 쪽에서도 더욱 프로젝트를 완성하게끔 동기부여가 될 수 있다."
+      />
+      <PageFooter
+        Prev="/project/mayday"
+        List="/project"
+        Next="/project/election"
       />
     </div>
   );

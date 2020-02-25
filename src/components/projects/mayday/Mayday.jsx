@@ -7,6 +7,8 @@ import ProjectTopic, {
   ProjectTwoImage,
   PriceImage
 } from "../ProjectTopic";
+import { PageFooter } from "../../BasicPageComp";
+
 import maydayimage from "../../../image/smilemaydayicon.png";
 import capstone1 from "../../../image/mayday/capstone1.jpg";
 import capstone2 from "../../../image/mayday/capstone2.png";
@@ -101,6 +103,7 @@ const Mayday = () => {
         p32="- 아이디어 프로젝트에 대한 흥미가 생겼다."
         p33="- 어플 제작에 대한 관심도가 증가했다."
       />
+      <PageFooter Prev="" List="/project" Next="/project/workroom8363" />
     </div>
   );
 };

@@ -4,6 +4,8 @@ import ProjectTopic, {
   ProjectExplain,
   ProjectBackface
 } from "../ProjectTopic";
+import { PageFooter } from "../../BasicPageComp";
+
 import electionImage from "../../../image/koreamap (1).jpg";
 
 const PromiseElection = () => {
@@ -52,6 +54,7 @@ const PromiseElection = () => {
         explain2="2. "
         p21="- 돈이 오고 감으로써 동기부여 및 "
       />
+      <PageFooter Prev="/project/workroom8363" List="/project" Next="" />
     </div>
   );
 };

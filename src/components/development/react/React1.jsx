@@ -6,6 +6,7 @@ import {
   DevelopmentContent,
   JSCode
 } from "../../development/components/DevelopmentComp";
+import { PageFooter } from "../../BasicPageComp";
 
 const React1 = () => {
   return (
@@ -88,6 +89,7 @@ const React1 = () => {
         text10="building large applications with data that changes over time."
         text20="번역: 우리는 지속해서 데이터가 변화하는 대규모 애플리케이션을 구축하기 위해 React를 만들었습니다."
       />
+      <PageFooter List="/development/react" Next="/development/react/2" />
     </div>
   );
 };
