@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 768px) {
   .__listContent {
-    padding: 12px 25px 25px;
+    padding: 15px;
     margin: 25px 15px;
   }
 
@@ -147,4 +147,19 @@ footer {
 
 .PageFooterContainer ul li span {
   margin-left: 7px;
+}
+.PageFooterContainer ul li:last-child span {
+  margin-right: 7px;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .PageFooterContainer ul li {
+    padding: 3px;
+
+    font-size: 0.5em;
+  }
+  .PageFooterContainer ul li span {
+    display: none;
+  }
 }

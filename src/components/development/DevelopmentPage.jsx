@@ -43,6 +43,7 @@ const DevelopmentPage = () => {
       alt: "sass"
     }
   ];
+
   return (
     <div className="__listContainer">
       {developmentValue.map((value, index) => {

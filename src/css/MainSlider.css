@@ -23,14 +23,9 @@
 }
 
 .__Slider a:hover {
-  color: black;
+  color: #ddd;
 }
 .__Slider a {
-  white-space: 3px;
-  font-weight: bolder;
-  font-family: "Montserrat", sans-serif;
-}
-.__Slider a:visited {
   color: #000;
   letter-spacing: 1px;
   font-weight: bolder;

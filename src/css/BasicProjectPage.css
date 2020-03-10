@@ -1,7 +1,9 @@
 .BasicContainer {
   width: 70%;
-  margin: 0px auto 150px;
+  margin: 0px auto 100px;
   height: auto;
+  padding: 0px 50px;
+  border: 1px dotted #ddd;
 }
 
 .ProjectTopic {
@@ -15,7 +17,7 @@
 }
 
 .ProjectExplain h3 {
-  margin: 10px 30px;
+  margin: 20px 30px;
   padding-left: 10px;
   font-size: 1.5em;
   font-weight: bold;
@@ -24,6 +26,8 @@
   margin: 1px 30px;
   padding-left: 10px;
   font-size: 0.9em;
+  font-weight: bold;
+  line-height: 2em;
 }
 
 .ProjectImage {
@@ -31,18 +35,31 @@
   width: 40%;
   text-align: center;
   margin: 0 auto;
+  padding: 50px 0;
 }
 .ProjectImage img {
   width: 80%;
   height: 80%;
 }
 
+.ProjectImageCircle {
+  display: block;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.ProjectImageCircle img {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+}
 /* ProjectBackface */
 
 .panelList {
   display: flex;
   width: 100%;
-  height: 45vh;
+  height: 320px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -110,6 +127,11 @@
   z-index: 2;
   transform: rotateY(0deg);
 }
+@media screen and (max-width: 768px) {
+  .panelList {
+    /* height: ; */
+  }
+}
 
 /* Video */
 
@@ -117,30 +139,31 @@
   width: 100%;
 }
 
-/* twoImage */
+/* ProjectImageList */
 
-.twoImageContainer {
+.ProjectImageList {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 500px;
+  /* height - media */
 }
-.twoImageContainer img {
-  width: 48%;
+.ProjectImageList div {
+  width: 49%;
 }
-
-/* Price Image */
-
-.PriceImage {
-  display: flex;
-}
-.PriceImage img {
-  width: 30%;
-  margin: 20px;
-  border: 3px solid #000;
+.ProjectImageList img {
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
+  .BasicContainer {
+    padding-top: 20px;
+  }
   .ProjectTopic {
-    margin: 10px 0;
+    margin: 20px 0;
+    font-size: 0.8em;
   }
   .ProjectTopic h2 {
     margin: 15px 15px 10px;
@@ -152,12 +175,12 @@
     margin: 5px 15px;
     padding-left: 5px;
     font-size: 0.7em;
-    font-weight: bold;
   }
   .ProjectExplain p {
     margin: 1px 15px;
     padding-left: 5px;
     font-size: 0.5em;
+    font-weight: bold;
   }
 
   .ProjectImage img {
@@ -170,7 +193,7 @@
   .panelList {
     display: flex;
     width: 100%;
-    height: 15vh;
+    height: 12vh;
     justify-content: space-between;
     margin-bottom: 50px;
   }

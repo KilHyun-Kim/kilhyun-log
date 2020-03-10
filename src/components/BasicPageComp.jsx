@@ -43,10 +43,8 @@ export const PageFooter = props => {
           <li>
             <Link to={props.Next}>
               <p>
-                Next Post
-                <span>
-                  <TiArrowRightOutline />
-                </span>
+                <span>Next Post</span>
+                <TiArrowRightOutline />
               </p>
             </Link>
           </li>

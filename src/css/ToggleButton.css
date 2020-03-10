@@ -21,7 +21,7 @@
   line-height: 50px;
   cursor: pointer;
   top: 50%;
-  transform: translateX(-930%);
+  transform: translateX(-1000%);
   transition-duration: 1s;
   border-radius: 0px 25px 25px 0;
 }

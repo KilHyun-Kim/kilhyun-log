@@ -1,5 +1,7 @@
 import React from "react";
 import "../../css/BasicProjectPage.css";
+import ExifOrientationImg from "react-exif-orientation-img";
+
 const ProjectTopic = props => {
   return (
     <div className="ProjectTopic">
@@ -29,9 +31,17 @@ export const ProjectExplain = props => {
   );
 };
 
-export const ProjectImage = props => {
+export const ProjectMainImage = props => {
   return (
     <div className="ProjectImage">
+      <img src={props.src} alt={props.alt} />
+    </div>
+  );
+};
+
+export const ProjectMainCircleImage = props => {
+  return (
+    <div className="ProjectImageCircle">
       <img src={props.src} alt={props.alt} />
     </div>
   );
@@ -102,34 +112,106 @@ export const ProjectVideo = props => {
   );
 };
 
-export const ProjectTwoImage = props => {
-  // let cnt = 0;
-  // const openLayer = (IdName, tpos, lpos) => {
-  //   if (cnt === 0) {
-  //     const pop = document.getElementById(IdName);
-  //     pop.style.display = "block";
-  //     pop.style.top = tops + "px";
-  //     pop.style.left = lpos + "px";
-  //   }
-  // };
-  // const closeLayer = IdName => {
-  //   const pop = document.getElementById(IdName);
-  //   pop.style.display = "none";
-  //   cnt = 0;
-  // };
-  return (
-    <div className="twoImageContainer">
-      <img src={props.src1} alt={props.alt1} />
-      <img src={props.src2} alt={props.alt2} />
-    </div>
-  );
-};
+// export const ProjectTwoImage = props => {
+//   // let cnt = 0;
+//   // const openLayer = (IdName, tpos, lpos) => {
+//   //   if (cnt === 0) {
+//   //     const pop = document.getElementById(IdName);
+//   //     pop.style.display = "block";
+//   //     pop.style.top = tops + "px";
+//   //     pop.style.left = lpos + "px";
+//   //   }
+//   // };
+//   // const closeLayer = IdName => {
+//   //   const pop = document.getElementById(IdName);
+//   //   pop.style.display = "none";
+//   //   cnt = 0;
+//   // };
+//   let cnt = 0;
+//   const openLayer = IdName => {
+//     if (cnt === 0) {
+//       cnt++;
+//       const pop = document.getElementById(IdName);
+//       pop.style.display = "inline";
+//     }
+//   };
+//   const closeLayer = IdName => {
+//     const pop = document.getElementById(IdName);
+//     pop.style.display = "none";
+//     cnt = 0;
+//   };
+//   const style = {
+//     position: "fixed",
+//     width: "100%",
+//     height: "100",
+//     display: "none",
+//     zIndex: "4",
+//     top: "0",
+//     backgroundColor: "black"
+//   };
+//   const style2 = {
+//     width: "50%",
+//     height: "100%",
+//     margin: "0 auto"
+//   };
 
-export const PriceImage = props => {
-  return (
-    <div className="PriceImage">
-      <img src={props.src1} alt={props.alt} />
-      <img src={props.src2} alt={props.alt} />
-    </div>
-  );
+//   console.log(props);
+// const imageList = props.twoimages.map((image, index) => (
+//   <>
+//     <div className="Pamphlet" key={index} onClick={() => openLayer(index)}>
+//       <img src={image.src} />
+//     </div>
+//     <div id={index} style={style} onClick={() => closeLayer(index)}>
+//       <img src={image.src} style={style2} />
+//     </div>
+//   </>
+// ));
+
+// return <div className="twoImageContainer"></div>;
+// };
+
+export const ProjectImage = props => {
+  let cnt = 0;
+  const openLayer = (IdName, tpos, lpos) => {
+    if (cnt === 0) {
+      cnt++;
+      lpos = "0";
+      const pop = document.getElementById(IdName);
+      pop.style.display = "inline-block";
+      pop.style.left = lpos + "px";
+    }
+  };
+
+  const closeLayer = IdName => {
+    const pop = document.getElementById(IdName);
+    pop.style.display = "none";
+    cnt = 0;
+  };
+  const style = {
+    position: "fixed",
+    width: "100%",
+    height: "100%",
+    display: "none",
+    zIndex: "4",
+    top: "0",
+    backgroundColor: "black",
+    textAlign: "center"
+  };
+  const style2 = {
+    width: "40%",
+    height: "100%"
+  };
+
+  const projectImageList = props.images.map(image => (
+    <>
+      <div key={image.id} onClick={() => openLayer(image.id)}>
+        <ExifOrientationImg src={image.src} />
+      </div>
+      <div id={image.id} style={style} onClick={() => closeLayer(image.id)}>
+        <ExifOrientationImg src={image.src} style={style2} />
+      </div>
+    </>
+  ));
+
+  return <div className="ProjectImageList">{projectImageList}</div>;
 };

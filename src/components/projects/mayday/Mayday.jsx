@@ -1,11 +1,10 @@
 import React from "react";
 import ProjectTopic, {
   ProjectExplain,
-  ProjectImage,
+  ProjectMainImage,
   ProjectBackface,
   ProjectVideo,
-  ProjectTwoImage,
-  PriceImage
+  ProjectImage
 } from "../ProjectTopic";
 import { PageFooter } from "../../BasicPageComp";
 
@@ -14,11 +13,20 @@ import capstone1 from "../../../image/mayday/capstone1.jpg";
 import capstone2 from "../../../image/mayday/capstone2.png";
 import price1 from "../../../image/mayday/price1.jpg";
 import price2 from "../../../image/mayday/price2.png";
+import { useState } from "react";
 
 const Mayday = () => {
+  const [images] = useState([
+    { src: capstone1, id: "capstone1" },
+    { src: capstone2, id: "capstone2" }
+  ]);
+  const [prices] = useState([
+    { src: price1, id: "price1" },
+    { src: price2, id: "price2" }
+  ]);
   return (
     <div className="BasicContainer">
-      <ProjectImage src={maydayimage} alt="mayday" />
+      <ProjectMainImage src={maydayimage} alt="mayday" />
       <ProjectTopic topic="MAYDAY가 무엇인가요?" />
       <ProjectExplain
         explain1="Arduino & Android 플랫폼을 활용한 긴급구조 어플리케이션"
@@ -73,12 +81,7 @@ const Mayday = () => {
       />
 
       <ProjectTopic topic="캡스톤 디자인 대회 출전 당시 팜플렛" />
-      <ProjectTwoImage
-        src1={capstone1}
-        alt1="capstone1"
-        src2={capstone2}
-        alt2="capstone2"
-      />
+      <ProjectImage images={images} />
       <ProjectTopic topic="수상내역" />
       <ProjectExplain
         explain1="Arduino & Android 플랫폼을 활용한 긴급구조 어플리케이션"
@@ -86,7 +89,7 @@ const Mayday = () => {
         p12="2. 캠퍼스 대표로 참가한 경상대학교 본캠퍼스에서의 캡스톤 디자인 대회에서 스마트 기술상 수상"
         p13="3. 전국 대학교들이 모인 대전대학교 캡스톤 디자인대회에서 수상"
       />
-      <PriceImage src1={price1} alt1="price1" src2={price2} alt2="price2" />
+      <ProjectImage images={prices} />
 
       <ProjectTopic topic="배운점" />
       <ProjectExplain

@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectTopic, {
   ProjectExplain,
-  ProjectImage,
-  ProjectBackface
+  ProjectBackface,
+  ProjectMainCircleImage
 } from "../ProjectTopic";
 import { PageFooter } from "../../BasicPageComp";
 
@@ -10,7 +10,7 @@ import workroom8363 from "../../../image/workroom8363.png";
 const Workroom8363 = () => {
   return (
     <div className="BasicContainer">
-      <ProjectImage src={workroom8363} alt="workroom8363" />
+      <ProjectMainCircleImage src={workroom8363} alt="workroom8363" />
       <ProjectTopic topic="Workroom8363이 무엇인가요?" />
       <ProjectExplain
         explain1="대구의 한 가죽공방 웹 사이트"
@@ -49,31 +49,34 @@ const Workroom8363 = () => {
 
       <ProjectTopic topic="LINK" />
 
-      <ProjectTopic topic="완성되지 않은 이유" />
+      <ProjectTopic topic="완성되지 못한 이유" />
       <ProjectExplain
         explain1="1. 제작해본 첫 페이지"
         p11="- 시작(설계) 부터 끝(서버 렌더링) 까지 나만의 손으로 만든 첫 페이지였다."
         p12="- 어떤 기술을 사용해야하는지, 어떻게 시작 해야하는지 등 어려움이 많았다."
-        p13="- 하지만 나는 내가 맡은 일로써 최선을 다하여 제작에 몰두 했다."
+        p13="- 마지막에는 많은 공부가 되었고, 프론트엔드를 나의 길로 선택하게 되는 계기가 되었다."
         explain2="2. 가죽공방으로부터의 무관심"
-        p21="- 소통의 한계, 바쁘다는 핑계로 요구사항 뒷전"
-        p22="- 흐지부지"
-        p23="- 사진도 안줌"
+        p21="- 소통의 한계"
+        p22="- 공방의 요구사항을 받지못함"
+        p23="- 바쁘다는 핑계로 제품 사진, 기본적인 틀, 글씨체등 받지못함"
       />
 
       <ProjectTopic topic="배운점" />
       <ProjectExplain
         explain1="1. 소통의 중요성"
         p11="- 확실한 소통의 경로가 필요하다고 느꼈다."
-        p12="- 소비자의 요구사항을 제대로 파악하여 내가 갖고있는 기술을 최대한 활용하영 요구사항을 만족시켜야 한다."
-        explain2="2. 돈의 거래"
-        p21="- 돈을 거래함으로써 동기부여 및 중요성을 파악할 수 있음."
-        p22="- 소비자 쪽에서도 더욱 프로젝트를 완성하게끔 동기부여가 될 수 있다."
+        p12="- 소비자의 요구사항을 제대로 파악하여 내가 갖고있는 기술을 최대한 활용하여 요구사항을 만족시켜야 한다."
+        explain2="2. 돈 거래의 중요성"
+        p21="- 돈을 거래함으로써 확실한 거래가 되고, 개발자에게는 동기부여가 됨 "
+        p22="- 소비자 쪽에서도 더욱 더 프로젝트를 얻을 수 있다. "
+        explain3="3. 앞으로의 방향 및 Front-end 기술"
+        p31="- 어떻게 만들어 나갈지, 어떤 기술을 사용할지를 결정하여 처음부터 끝까지 만들어본 사이트이다. "
+        p32="- 앞으로의 나에 대해서 어떤 기술이 필요하고, 어떤 공부를 해야하는지 길을 결정할 수 있었다."
       />
       <PageFooter
         Prev="/project/mayday"
         List="/project"
-        Next="/project/election"
+        Next="/project/algoppobja"
       />
     </div>
   );

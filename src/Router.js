@@ -6,7 +6,6 @@ import Project from "./components/Project";
 import Mayday from "./components/projects/mayday/Mayday";
 import Development from "./components/Development";
 import Workroom8363 from "./components/projects/workroom/Workroom8363";
-import PromiseElection from "./components/projects/election/PromiseElection";
 import JavascriptPageList from "./components/development/javascript/JavascriptPageList";
 import js1 from "./components/development/javascript/Js1";
 import TypescriptPageList from "./components/development/typescript/TypescriptPageList";
@@ -23,6 +22,8 @@ import Info from "./components/Info";
 import OsakaPage from "./components/travel/OsakaPage";
 import SaipanPage from "./components/travel/SaipanPage";
 import React2 from "./components/development/react/React2";
+import Algoppobja from "./components/projects/algoppobja/Algoppobja";
+
 export default () => (
   <Router>
     <Header title="KILHYUN.LOG" />
@@ -32,7 +33,7 @@ export default () => (
     <Route exact path="/project" component={Project} />
     <Route exact path="/project/mayday" component={Mayday} />
     <Route exact path="/project/workroom8363" component={Workroom8363} />
-    <Route exact path="/project/election" component={PromiseElection} />
+    <Route exact path="/project/algoppobja" component={Algoppobja} />
     <Route exact path="/development" component={Development} />
     <Route
       exact

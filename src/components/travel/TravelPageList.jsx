@@ -36,6 +36,7 @@ const TravelPageList = props => {
     //   info: "Jeju"
     // }
   ];
+
   return (
     <div className="TravelWrapper">
       <div className="TravelContainer">
