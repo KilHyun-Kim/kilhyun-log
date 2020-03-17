@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6aedb5d998ac2c1df52ed649b46c261a",
+    "revision": "6a32e240b924c95ea04061a8c8affe57",
     "url": "/kilhyun-log/index.html"
   },
   {
-    "revision": "5e381fc2d829b1164a55",
-    "url": "/kilhyun-log/static/css/2.a22f4112.chunk.css"
+    "revision": "e0a4d33d3f3ee8e2fe9d",
+    "url": "/kilhyun-log/static/css/2.24e0710e.chunk.css"
   },
   {
-    "revision": "3d5a3dcd29d2e3495d30",
-    "url": "/kilhyun-log/static/css/main.6e4a7b36.chunk.css"
+    "revision": "851f27d07a32c5066fd8",
+    "url": "/kilhyun-log/static/css/main.c756411d.chunk.css"
   },
   {
-    "revision": "5e381fc2d829b1164a55",
-    "url": "/kilhyun-log/static/js/2.f07eebb5.chunk.js"
+    "revision": "e0a4d33d3f3ee8e2fe9d",
+    "url": "/kilhyun-log/static/js/2.24d77274.chunk.js"
   },
   {
     "revision": "bf23039b4e70a07c5aeb1b4010df3572",
-    "url": "/kilhyun-log/static/js/2.f07eebb5.chunk.js.LICENSE.txt"
+    "url": "/kilhyun-log/static/js/2.24d77274.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3d5a3dcd29d2e3495d30",
-    "url": "/kilhyun-log/static/js/main.d86947dc.chunk.js"
+    "revision": "851f27d07a32c5066fd8",
+    "url": "/kilhyun-log/static/js/main.22270b61.chunk.js"
   },
   {
     "revision": "d8a28c37a5d3bc715652",
@@ -170,10 +170,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f31fd3c031df8e5e6777575de4bbd6ca",
     "url": "/kilhyun-log/static/media/koreaColormap.f31fd3c0.gif"
-  },
-  {
-    "revision": "8bae469ba9d148c38c1153bfffda4675",
-    "url": "/kilhyun-log/static/media/koreamap (1).8bae469b.jpg"
   },
   {
     "revision": "4c912bf47b8ceacf27e6a5dfffbd6ed7",

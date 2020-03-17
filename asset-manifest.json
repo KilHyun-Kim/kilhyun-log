@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/kilhyun-log/static/css/main.6e4a7b36.chunk.css",
-    "main.js": "/kilhyun-log/static/js/main.d86947dc.chunk.js",
-    "main.js.map": "/kilhyun-log/static/js/main.d86947dc.chunk.js.map",
+    "main.css": "/kilhyun-log/static/css/main.c756411d.chunk.css",
+    "main.js": "/kilhyun-log/static/js/main.22270b61.chunk.js",
+    "main.js.map": "/kilhyun-log/static/js/main.22270b61.chunk.js.map",
     "runtime-main.js": "/kilhyun-log/static/js/runtime-main.02f48e5a.js",
     "runtime-main.js.map": "/kilhyun-log/static/js/runtime-main.02f48e5a.js.map",
-    "static/css/2.a22f4112.chunk.css": "/kilhyun-log/static/css/2.a22f4112.chunk.css",
-    "static/js/2.f07eebb5.chunk.js": "/kilhyun-log/static/js/2.f07eebb5.chunk.js",
-    "static/js/2.f07eebb5.chunk.js.map": "/kilhyun-log/static/js/2.f07eebb5.chunk.js.map",
+    "static/css/2.24e0710e.chunk.css": "/kilhyun-log/static/css/2.24e0710e.chunk.css",
+    "static/js/2.24d77274.chunk.js": "/kilhyun-log/static/js/2.24d77274.chunk.js",
+    "static/js/2.24d77274.chunk.js.map": "/kilhyun-log/static/js/2.24d77274.chunk.js.map",
     "index.html": "/kilhyun-log/index.html",
-    "precache-manifest.d35eacc4ad8978035d1a0ce0d228dfa8.js": "/kilhyun-log/precache-manifest.d35eacc4ad8978035d1a0ce0d228dfa8.js",
+    "precache-manifest.5379579148e617bebd230bce04adfcdc.js": "/kilhyun-log/precache-manifest.5379579148e617bebd230bce04adfcdc.js",
     "service-worker.js": "/kilhyun-log/service-worker.js",
-    "static/css/2.a22f4112.chunk.css.map": "/kilhyun-log/static/css/2.a22f4112.chunk.css.map",
-    "static/css/main.6e4a7b36.chunk.css.map": "/kilhyun-log/static/css/main.6e4a7b36.chunk.css.map",
-    "static/js/2.f07eebb5.chunk.js.LICENSE.txt": "/kilhyun-log/static/js/2.f07eebb5.chunk.js.LICENSE.txt",
+    "static/css/2.24e0710e.chunk.css.map": "/kilhyun-log/static/css/2.24e0710e.chunk.css.map",
+    "static/css/main.c756411d.chunk.css.map": "/kilhyun-log/static/css/main.c756411d.chunk.css.map",
+    "static/js/2.24d77274.chunk.js.LICENSE.txt": "/kilhyun-log/static/js/2.24d77274.chunk.js.LICENSE.txt",
     "static/media/capstone1.jpg": "/kilhyun-log/static/media/capstone1.7ad10b58.jpg",
     "static/media/capstone2.png": "/kilhyun-log/static/media/capstone2.4be84a2f.png",
     "static/media/image001.png": "/kilhyun-log/static/media/image001.cd2e19e4.png",
@@ -50,7 +50,6 @@
     "static/media/koki8.jpg": "/kilhyun-log/static/media/koki8.ab1aed1a.jpg",
     "static/media/koki9.jpg": "/kilhyun-log/static/media/koki9.124c004f.jpg",
     "static/media/koreaColormap.gif": "/kilhyun-log/static/media/koreaColormap.f31fd3c0.gif",
-    "static/media/koreamap (1).jpg": "/kilhyun-log/static/media/koreamap (1).8bae469b.jpg",
     "static/media/osaka(1).jpg": "/kilhyun-log/static/media/osaka(1).4c912bf4.jpg",
     "static/media/osaka(10).jpg": "/kilhyun-log/static/media/osaka(10).d836906b.jpg",
     "static/media/osaka(11).jpg": "/kilhyun-log/static/media/osaka(11).1a849584.jpg",
@@ -108,9 +107,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.02f48e5a.js",
-    "static/css/2.a22f4112.chunk.css",
-    "static/js/2.f07eebb5.chunk.js",
-    "static/css/main.6e4a7b36.chunk.css",
-    "static/js/main.d86947dc.chunk.js"
+    "static/css/2.24e0710e.chunk.css",
+    "static/js/2.24d77274.chunk.js",
+    "static/css/main.c756411d.chunk.css",
+    "static/js/main.22270b61.chunk.js"
   ]
 }
