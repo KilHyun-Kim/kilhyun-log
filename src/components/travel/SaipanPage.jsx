@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { TravelFolder, TravelImage, TravelFooter } from "./TravelPage";
+import {
+  TravelFolder,
+  TravelImage,
+  TravelFooter,
+  TravelReady
+} from "./TravelPage";
 import "../../css/TravelBC.css";
 
 import saipan1 from "../../image/saipan/saipan(1).jpg";
@@ -48,6 +53,7 @@ const SaipanPage = () => {
       <div className="TravelContainer">
         <TravelFolder Folder="saipan" />
         <TravelImage images={images} />
+        <TravelReady />
       </div>
       <TravelFooter List="/travel" />
     </div>

@@ -31,7 +31,12 @@ import koki29 from "../../image/koki/koki29.jpg";
 import koki30 from "../../image/koki/koki30.jpg";
 import koki31 from "../../image/koki/koki31.jpg";
 import koki32 from "../../image/koki/koki32.jpg";
-import { TravelFolder, TravelImage, TravelFooter } from "./TravelPage";
+import {
+  TravelFolder,
+  TravelImage,
+  TravelFooter,
+  TravelReady
+} from "./TravelPage";
 
 import "../../css/TravelBC.css";
 
@@ -76,6 +81,7 @@ const KokiPage = () => {
       <div className="TravelContainer">
         <TravelFolder Folder="Kota Kinabalu" />
         <TravelImage images={images} />
+        <TravelReady />
       </div>
       <TravelFooter List="/travel" />
     </div>

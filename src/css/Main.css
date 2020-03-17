@@ -60,7 +60,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .__projectContainer {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   .__projectContainer > a {
@@ -74,7 +74,7 @@ main {
   }
 
   .__projectContainer:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .ProjectContainer {
     height: 130px;

@@ -1,5 +1,5 @@
 import React from "react";
-import TravelPage, { TravelFolder } from "./TravelPage";
+import TravelPage, { TravelFolder, TravelReady } from "./TravelPage";
 
 const TravelPageList = props => {
   const values = [
@@ -54,6 +54,7 @@ const TravelPageList = props => {
             );
           })}
         </div>
+        <TravelReady />
       </div>
     </div>
   );

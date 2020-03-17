@@ -118,6 +118,14 @@ export const TravelFooter = props => {
     </footer>
   );
 };
+export const TravelReady = () => {
+  return (
+    <div className="TravelReady">
+      <h1>"Travel Page"</h1>
+      <h2>모바일 버전은 개발 중입니다.</h2>
+    </div>
+  );
+};
 
 const TravelPage = props => {
   return (

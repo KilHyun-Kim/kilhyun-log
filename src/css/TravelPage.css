@@ -146,11 +146,28 @@
   transition: all 0.3s ease-in-out;
 }
 
+.TravelReady {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin: 8vh 0;
+}
+
 @media screen and (max-width: 768px) {
+  .TravelImageLists {
+    display: none;
+  }
+
   .FirstRow p {
     font-size: 0.8em;
   }
   .__Images p {
     font-size: 0.1em;
+  }
+  .TravelLists {
+    display: none;
+  }
+  .TravelReady {
+    display: block;
   }
 }

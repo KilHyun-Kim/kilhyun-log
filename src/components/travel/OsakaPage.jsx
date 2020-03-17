@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { TravelFolder, TravelImage, TravelFooter } from "./TravelPage";
+import {
+  TravelFolder,
+  TravelImage,
+  TravelFooter,
+  TravelReady
+} from "./TravelPage";
 import "../../css/TravelBC.css";
 
 import osaka1 from "../../image/osaka/osaka(1).jpg";
@@ -75,6 +80,7 @@ const OsakaPage = () => {
       <div className="TravelContainer">
         <TravelFolder Folder="Osaka" />
         <TravelImage images={images} />
+        <TravelReady />
       </div>
       <TravelFooter List="/travel" />
     </div>
