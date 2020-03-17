@@ -2,7 +2,7 @@ import React from "react";
 import BasicPageComp from "../BasicPageComp";
 import Mayday from "../../image/smilemaydayicon.png";
 import WORKROOM8363 from "../../image/workroom8363.png";
-import Election from "../../image/koreamap (1).jpg";
+import Algoppobja from "../../image/koreaColormap.gif";
 
 const ProjectList = () => {
   const projectValue = [
@@ -26,12 +26,12 @@ const ProjectList = () => {
       alt: "workroom8363"
     },
     {
-      hyperLink: "/project/election",
-      projectName: "Promise election",
+      hyperLink: "/project/algoppobja",
+      projectName: "Algoppobja",
       explanation: "2020.4.15 국회의원 선거 후보 정보 및 공약 웹 사이트 ",
-      addEx: "React, html5 / UI&UX , Front-end",
+      addEx: "React, JSX , AWS / UI&UX , Front-end",
       days: "2020.2.20",
-      src: Election,
+      src: Algoppobja,
       alt: "korea"
     }
   ];

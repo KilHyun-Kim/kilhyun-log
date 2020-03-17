@@ -19,6 +19,7 @@ export const ProjectExplain = props => {
       <p> {props.p11}</p>
       <p>{props.p12}</p>
       <p>{props.p13}</p>
+      <p>{props.p14}</p>
       <h3> {props.explain2}</h3>
       <p> {props.p21}</p>
       <p>{props.p22}</p>

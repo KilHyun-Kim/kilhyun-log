@@ -3,11 +3,12 @@ import MainSlider from "./MainSlider";
 import WorkroomImage from "../image/workroom8363.png";
 import MaydayImage from "../image/smilemaydayicon.png";
 import OtherprojectImage from "../image/otherproject.png";
-import PromiseElection from "../image/koreamap (1).jpg";
+import PromiseElection from "../image/koreaColormap.gif";
 // import WhiteImage from "../image/WhiteImage";
 const MainSliderList = () => {
   const values = [
     {
+      mainLink: "/project",
       title: "Project",
       topic1: "MAYDAY",
       _src1: MaydayImage,
@@ -26,6 +27,7 @@ const MainSliderList = () => {
       id: "#circle"
     },
     {
+      mainLink: "/development",
       title: "Development",
       topic1: "JavaScript",
       _src1:
@@ -50,6 +52,7 @@ const MainSliderList = () => {
       _link5: "/development"
     },
     {
+      mainLink: "/travel",
       title: "Travel",
       topic1: "Saipan",
       _src1: "https://static.thenounproject.com/png/1042874-200.png",
@@ -71,6 +74,7 @@ const MainSliderList = () => {
       {values.map((value, index) => {
         return (
           <MainSlider
+            mainLink={value.mainLink}
             title={value.title}
             topic1={value.topic1}
             _src1={value._src1}

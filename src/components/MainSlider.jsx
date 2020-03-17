@@ -30,7 +30,7 @@ export default class MainSlider extends Component {
     };
     return (
       <div className="__projectContainer">
-        <Link to="/development">{this.props.title}</Link>
+        <Link to={this.props.mainLink}>{this.props.title}</Link>
         <div className="ProjectContainer">
           <ul>
             <Slider {...settings} className="__Slider">

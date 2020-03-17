@@ -9,25 +9,26 @@ class Header extends Component {
   state = {
     scrolled: false
   };
-  // constructor(props) {
-  //   super(props);
-  //   // this.handleClick = this.handleClick.bind(this);
-  // }
-  // handleClick = () => {
-  //   const nav = document.querySelector(".nav-links");
-  //   const navLinks = document.querySelectorAll(".nav-links li");
-  //   const menu_list = document.querySelector(".menu_list");
-  //   nav.classList.toggle("nav-active");
-  //   menu_list.classList.toggle("toggle");
-  //   navLinks.forEach((link, index) => {
-  //     if (link.getElementsByClassName.animation) {
-  //       link.style.animation = "";
-  //     } else {
-  //       link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
-  //         0.4}s`;
-  //     }
-  //   });
-  // };
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick = () => {
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+    const menu_list = document.querySelector(".menu_list");
+    nav.classList.toggle("nav-active");
+    menu_list.classList.toggle("toggle");
+    navLinks.forEach((link, index) => {
+      console.log(link);
+      if (link.getElementsByClassName.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
+          0.4}s`;
+      }
+    });
+  };
 
   componentDidMount() {
     window.addEventListener("scroll", () => {

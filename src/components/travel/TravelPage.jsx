@@ -61,7 +61,7 @@ export const TravelImage = props => {
       } else if (IdName >= 30 && IdName < 33) {
         tpos = 2700;
       }
-      pop.style.display = "inline";
+      pop.style.display = "inline-block";
       pop.style.left = lpos + "px";
     }
   };

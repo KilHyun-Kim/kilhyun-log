@@ -6,7 +6,7 @@ import ProjectTopic, {
 } from "../ProjectTopic";
 import { PageFooter } from "../../BasicPageComp";
 
-import electionImage from "../../../image/koreamap (1).jpg";
+import electionImage from "../../../image/koreaColormap.gif";
 
 const Algoppobja = () => {
   return (
@@ -33,26 +33,26 @@ const Algoppobja = () => {
         back3="- S3 를 사용하여 SPA 를 호스팅"
       />
       <ProjectTopic topic="LINK" />
-
-      <ProjectTopic topic="완성되지 않은 이유" />
+      <ProjectExplain explain1="임시 링크 : http://kilikili-algoppobja-test.s3-website.ap-northeast-2.amazonaws.com/" />
+      <ProjectTopic topic="어떻게 제작 했나?" />
       <ProjectExplain
-        explain1="1. 제작해본 첫 페이지"
-        p11="- 시작(설계) 부터 끝(서버 렌더링) 까지 나만의 손으로 만든 첫 페이지였다."
-        p12="- 어떤 기술을 사용해야하는지, 어떻게 시작 해야하는지 등 어려움이 많았다."
-        p13="- 하지만 나는 내가 맡은 일로써 최선을 다하여 제작에 몰두 했다."
-        explain2="2. 가죽공방으로부터의 무관심"
-        p21="- 소통의 한계, 바쁘다는 핑계로 요구사항 뒷전"
-        p22="- 흐지부지"
-        p23="- 사진도 안줌"
+        explain1="1. 기술적인 부분"
+        p11="1) 기본적으로 초기 기획 및 목표를 간단한 사이트로 정했기 때문에 SPA(Single Page Application)로 정하였습니다."
+        p12="2) React를 사용하여 구현하였고, react-router-dom를 사용하여 url의 match 객체를 사용하여 간편하게 Component들을 작성 하였습니다."
+        p13="3) AWS (Amazon Web Service)의 S3(Simple Storage Service)를 사용하여 SPA를 호스팅 하였습니다."
+        p14="4) AWS의 Route53을 사용하여 도메인을 설정 하였습니다."
+        explain2="2. 반응형 웹"
+        p21="1) CSS3의 media query를 사용하여 스마트폰에서 웹을 접속하였을 때 반응형 웹으로 전환시켜 주었습니다."
       />
 
       <ProjectTopic topic="배운점" />
       <ProjectExplain
-        explain1="1. 사소한 아이디어를 가지고 웹을 적용하여 많은 파급력을 일으킬 수 있다는 생각을 가짐"
-        p11="- 확실한 소통의 경로가 필요하다고 느꼈다."
-        p12="- 소비자의 요구사항을 제대로 파악하여 내가 갖고있는 기술을 최대한 활용하영 요구사항을 만족시켜야 한다."
-        explain2="2. "
-        p21="- 돈이 오고 감으로써 동기부여 및 "
+        explain1="1. 나의 아이디어를 웹으로 표출"
+        p11="1) 아이디어를 가지고 설계 - 제작 - 호스팅 까지 할 수 있는 전체적인 흐름을 완벽히 파악할 수 있었습니다."
+        p12="2) 앞으로도 새롭고 참신한 아이디어가 있을 경우 나만의 방식(기술)으로 웹으로 표현할 수 있다는 자신감을 얻었습니다."
+        explain2="2. React 의 편의성과 다양한 기술 사용"
+        p21="1) 이 사이트에서는 React의 react-router-dom을 사용하여 url을 사용할 수 있게 match 객체를 응용하여 간단한 SPA를 제작하였습니다."
+        p22="2) 다양한 기술을 혼합하여 내가 원하는 결과물을 도출하기까지 많은 시행착오와 결국에는 해낼 수 있다는 자신감을 가지게 되었습니다."
       />
       <PageFooter Prev="/project/workroom8363" List="/project" Next="" />
     </div>
